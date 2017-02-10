@@ -1,0 +1,369 @@
+	#define true	                    1
+	#define false	                    0
+	
+	
+	#include "infiSTAR_AdminMenu.hpp"
+	author = "ArmSTALKER";
+	onLoadMission="ArmSTALKER: RolePlay 2.5";
+	onLoadName = "ArmSTALKER";
+	OnLoadIntro = "ArmSTALKER TEAM";
+	OnLoadMissionTime = 0;
+	enableDebugConsole = 1;
+	disableChannels[]={0,1,2,3,4,6}; // 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System
+	debriefing = 0;
+	showGPS = 0;
+	showRadio = 0;
+	briefing = 0;
+	aiKills = 0;
+	disabledAI= 1;
+	onPauseScript = "scripts\block_esc.sqf";
+	allowFunctionsLog = 1;
+	allowFunctionsRecompile = 1;
+	enableTeamSwitch = 0;
+	corpseManagerMode = 1;
+	corpseLimit = 20;
+	corpseRemovalMinTime = 180;
+	corpseRemovalMaxTime = 600;
+	respawnButton = 0;
+	MinScore = 0;
+	AvgScore = 1800;
+	MaxScore = 3000000;
+	MaxCustomFileSize = 838860800;
+	class ADMINS 
+	{
+	#include "ADMINS.hpp"
+	};
+	class Header
+	{
+		gameType = RPG;
+		minPlayers = 0;
+		maxPlayers = 350;
+	};
+	respawn = "BASE";
+	respawnDelay = 60;
+	respawnDialog = 0;
+	respawnOnStart = 0;
+	respawnTemplates[] = {};
+	class CfgFunctions
+	{
+		#include "cfgFunctions.hpp"
+	};
+	#include "scripts\pda\pda.hpp"
+	#include "scripts\craft\craft.hpp"
+	#include "scripts\keypad\keypad.hpp"
+	#include "scripts\notebook\notebook.hpp"
+	class CfgRemoteExec
+	{        
+	    class Functions
+	    {
+	    	mode = 2;
+			jip = 1;
+	   };        
+	  class Commands
+	    {
+	   class hint {allowedTargets=2; jip=0; }
+		};
+	};	
+	class ARMST_Factions
+	{
+		class ARMST_STALKER 
+		{
+			baseMarker ="neutral_spawn";			
+			playableUnits[] = {					
+				"loner_private1",
+				"loner_private2",
+				"loner_private3",
+				"loner_private4",
+				"loner_private5"
+			};
+			captureLocations = false;			
+			friendly[] = {		
+			};	
+		};
+		
+		class ARMST_SCIENCE 
+		{
+			baseMarker ="SCIENCE_base";
+			playableUnits[] = {
+				"hazmat_2"
+			};
+			captureLocations = false;
+			friendly[] = {
+			};
+		};
+
+		class ARMST_RENEGADE 
+		{
+			baseMarker ="respawn";
+			captureLocations = false;
+			friendly[] = {};
+		};
+
+		class ARMST_FREEDOM
+		{
+			baseMarker ="freedom_base";
+			playableUnits[] = {
+				"freedom_private",
+				"freedom_private2"
+			};
+			captureLocations = true;
+			friendly[] = {
+			};
+		};
+
+		class ARMST_BANDITS
+		{
+			baseMarker ="bandit_base";
+			playableUnits[] = {
+				"bandits_private",
+				"bandits_l",
+				"bandit_elite",
+				"armst_newbiebandit3",
+				"armst_newbiebandit2",
+				"armst_newbiebandit",
+				"bandits_private2"
+			};
+			captureLocations = false;
+			
+			friendly[] = {
+			};
+		};
+
+		class ARMST_DOLG 
+		{
+			baseMarker ="dolg_base";
+			playableUnits[] = {
+				"Dolg_private",
+				"elite_dolg",
+				"dolg_l",
+				"dolg_b",
+				"Dolg_private2"
+			};
+			captureLocations = true;
+			friendly[] = {
+			};
+			//leader = "76561198048381686";
+			//terminal = "terminal_1"
+		};
+
+		class ARMST_ARMY 
+		{
+			baseMarker ="army_base";
+			playableUnits[] = {
+				"elite_voen",
+				"army_l",
+				"army_b",
+				"Voen_private"
+			};
+			friendly[] = {
+			};
+			captureLocations = true;
+			//leader = "76561198048381686";	//Идентификатор лидера
+			//terminal = "terminal_2";	
+		};
+
+		class ARMST_MONOLITH 
+		{
+			baseMarker ="MONOLITH_respawn";
+			playableUnits[] = {"monolith_private"};
+			captureLocations = true;
+			friendly[] = {};
+			
+		};
+
+		class ARMST_MERCENARIES 
+		{
+			baseMarker ="mercenaries_base";
+			playableUnits[] = {
+				"mercenaries_private",
+				"elite_merc",
+				"mercenaries_l",
+				"mercenaries_private2"
+			};
+			captureLocations = true;
+			
+		};
+	};
+	
+	class ARMST_Traders 
+	{
+		#include "Traders\ARMY_TRADER.h"
+		#include "Traders\BANDITS_TRADER.h"
+		#include "Traders\BANDITS_TRADER_1.h"
+		#include "Traders\BARMEN.h"
+		#include "Traders\BARMEN_SEBJAN.h"
+		#include "Traders\DOLGS_TRADER1.h"
+		#include "Traders\FREEDOM_TRADER.h"
+		#include "Traders\FREEDOMs_BARMEN.h"
+		#include "Traders\MERCENARIES_TRADER.h"
+		#include "Traders\STAKLER_TRADER.h"
+		#include "Traders\SCIENCES_TRADER.h"
+		#include "Traders\MONOLIT_TRADER.h"
+		#include "Traders\SUPER_BARMEN.h"
+		
+	};
+	
+	class ARMST_DefaultCharacter
+	{
+		money = 20000;				     	//Начальный капитал для нового игрока
+		faction = "ARMST_STALKER";			//Фракция для нового игрока
+		loadout[] = {						//Снаряжение нового игрока
+			//Uniform
+			{"", {}},
+			//Vest
+			{"p_ak",{"Katana_swing"}},
+			//Backpack
+			{"", {}},
+			"",			 //Headgear
+			"", 		//Goggle
+			"",			//Binocular
+			//Primary
+			{"", {}, ""},
+			//Secondary
+			{"Hatchet3",{},"Katana_swing"},
+			//Hand
+			{"", {}, ""},
+			//Linked
+			{"ItemWatch"}
+		};
+	};
+	
+	class ARMST_Rating 
+	{
+		class Score 
+		{
+			killed = 0;					//смерть
+			killMember = -600;			//убийство своего (по фракции)
+			killFriendly = -100;			//убийство союзника (по фракции)
+			killEnemy = 250;				//убийство врага (по фракции)
+		};
+		
+		class Rangs 
+		{
+			class Renegade 
+			{
+				displayName = "Ренегат";
+				ScoreMax = -1000;
+			};
+			
+			class Novice 
+			{
+				displayName = "Новичок";
+				ScoreMin = 0;
+				ScoreMax = 5000;
+			};
+			
+			class Experienced 
+			{
+				displayName = "Опытный";
+				ScoreMin = 5000;
+				ScoreMax = 12000;
+			};
+			
+			class Veteran 
+			{
+				displayName = "Ветеран";
+				ScoreMin = 12000;
+				ScoreMax = 20000;
+			};
+			
+			class Master 
+			{
+				displayName = "Мастер";
+				ScoreMin = 20000;
+				ScoreMax = 30000;
+			};
+			
+			class Legend 
+			{
+				displayName = "Легенда";
+				ScoreMin = 30000;
+			};
+		};
+	};
+	
+	class ARMST_Equipments 
+	{
+		//Used for respawn
+		Equipment_respawn[] = {		
+			{"",{}},
+			{"p_ak", {"Katana_swing"}},
+			{"",{}},
+			"",
+			"",
+			"",
+			{"",{},""},
+			{"Hatchet3",{},"Katana_swing"},
+			{"",{},""},
+			{"ItemWatch"}
+		};
+		
+		//Other
+		Equipment_1[] = {
+			{"U_BG_Guerilla3_1", {}},
+			{"p_ak", {"Binocular"}},
+			{"", {}},
+			"H_Cap_blk",
+			"G_Spectacles",
+			"",
+			{"", {}, ""},
+			{"", {}, ""},
+			{"", {}, ""},
+			{"ItemCompass"}
+		};
+		
+		Equipment_2[] = {
+			{"U_BG_Guerilla3_1",{}},
+			{"p_ak",{"Binocular"}},
+			{"",{}},
+			"H_Cap_blk",
+			"G_Aviator",
+			"",
+			{"",{},""},
+			{"",{},""},
+			{"",{},""},
+			{"ItemCompass"}
+		};
+		
+		Equipment_3[] = {
+			{"loner_private4",{"20Rnd_av_9x39mm_val", "20Rnd_av_9x39mm_val"}},
+			{"Armst_sevanaemnik",{"20Rnd_av_9x39mm_val"}},
+			{"B_UAV_01_backpack_F",{"Binocular"}},
+			"",
+			"G_Aviator",
+			"",
+			{"arifle_av_vss",{"optic_av_aimp_2"},"20Rnd_av_9x39mm_val"},
+			{"",{},""},
+			{"",{},""},
+			{"ItemCompass"}
+		};
+		
+		Equipment_4[] = {
+			{"",{}},
+			{"V_BandollierB_blk",{
+				"30Rnd_ak_545x39_mag","30Rnd_ak_545x39_mag","30Rnd_ak_545x39_mag",
+				"30Rnd_ak_545x39_mag", "30Rnd_ak_545x39_mag","DAPSTALKERS_BOLTS"
+			}},
+			{"",{}},
+			"",
+			"",
+			"Binocular",
+			{"arifle_av_ak74old2",{"acc_flashlight"},"30Rnd_ak_545x39_mag"},
+			{"",{},""},
+			{"",{},""},
+			{"ItemCompass"}
+		};
+	};
+class CfgSounds
+	{
+	sounds[] = {};	
+	class kashel  
+	{
+		name = "kashel";
+		sound[] = {
+				"functions\kashel.ogg",1.000000, 1.000000
+		};
+		titles[] = { };
+	};
+};
+//InfiSTAR moduls
