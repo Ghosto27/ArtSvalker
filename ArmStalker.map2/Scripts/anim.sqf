@@ -56,6 +56,16 @@ Armst_science_door = {
 sleep 5;
 [-2, {[science_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
 };
+Armst_freedom_door = 
+{
+if (player isKindOf "freedom_private" or player isKindOf "freedom_private2" or player isKindOf "freedom_l" or player isKindOf "elite_freedom") then 
+	{
+	[freedom_door, "door_sound",15] call CBA_fnc_globalSay3d;
+	[-2, {[freedom_door, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	sleep 5;
+	[-2, {[freedom_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	};
+};
 
 armst_status = {
 hint "Досье смотрите в КПК." 
@@ -85,29 +95,6 @@ armst_barricade =
 		};
 };
 
-
-armst_reskin = {
-	private["_unit", "_outfit", "_new"];
-	_unit = _this select 0;
-	_outfit = _this select 1;
-	[_unit, [missionNamespace, _new_data]] call BIS_fnc_saveInventory;
-	_new = (group player) createUnit [_outfit, position player, [], 0, "FORM"];
-	addSwitchableUnit _new;
-	selectPlayer _new;
-	removeAllWeapons _new;
-	deleteVehicle _unit;
-	[_new, [missionNamespace, _new_data]] call BIS_fnc_loadInventory;
-	_new;
-};
-armst_change_skin = 
-{
-_unit = _this select 0;
-_outfit = _this select 1;
-_newcenter = createCenter EAST;
-_newgroup = createGroup _newcenter;
-_players = [_unit, _outfit] call armst_reskin;
-[_players] joinSilent _newgroup;
-};
 ARMST_art_detector_on = 
 {
 
@@ -219,190 +206,190 @@ armst_respawn_wake =
 
 		case "loner_private1": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 		};
 		case "loner_private2": { 
 			
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 		};
 		case "loner_private3": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "loner_private4": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "loner_private5": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+		[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_coat_1": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_coat_2": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_coat_3": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_coat_4": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_coat_5": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_coat_6": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_coat_7": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_coat_8": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice_1": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice_2": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice_3": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice_4": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice_5": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice_6": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice_7": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "armst_novice_8": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "loner_l": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "loner_b": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "elite_loner1": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "elite_loner2": { 
 		player setPosATL [762.079,610.247, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 		case "clearsky_private": { 
 		player setPosATL [5520.276,461.430, 0.2];
-			player switchmove "armst_wakeup";
+			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 			
 		};
 	};

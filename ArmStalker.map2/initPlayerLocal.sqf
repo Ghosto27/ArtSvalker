@@ -21,9 +21,6 @@ Boost = 50;
 [] execVM "scripts\night_fogs.sqf";
 [] execVM "scripts\dead_fogs.sqf";
 [] execVM "scripts\pda\fn_inv.sqf";
-player setvariable ["ARTDETECTOR",0];
-player setvariable ["armst_pda_web",0];
-player setVariable ["ARMST_artdetector",1];
 
 player addEventHandler ["hit", {[_this] spawn armst_broken_gas}];
 [] spawn
@@ -52,3 +49,6 @@ player addrating 100000;
 sleep 10;
 
 _mydamage_eh2 = player addEventHandler ["Fired", {[player] spawn player_fired}];
+player setvariable ["ARTDETECTOR",0];
+player setvariable ["armst_pda_web",0];
+player setVariable ["ARMST_artdetector",1];

@@ -6,8 +6,8 @@ player setVariable ["ARMST_artdetector",1];
 ARMST_BODYTEMP = 37.6;
 	titleCut [" ","BLACK in",5];
 		[player] spawn armst_respawn_wake;
-   	 	player switchmove "armst_wakeup";
+   	 	[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 6;
-   	 	player switchmove "";
+   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 		
 mydamage_eh2 = player addEventHandler ["Fired", {[player] spawn player_fired}];

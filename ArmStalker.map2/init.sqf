@@ -1,4 +1,3 @@
-
 setViewDistance 800;
 setObjectViewDistance 800;
 enableSaving [false, false];
@@ -63,4 +62,5 @@ MASSIVOBJECTSSSS=[4100,4100] nearObjects 6000;
 		sleep 5;
 	};	
 };
-[player] call AGM_WeaponSelect_fnc_putWeaponAway;
+
+player setVariable ["ARMST_artdetector",1];

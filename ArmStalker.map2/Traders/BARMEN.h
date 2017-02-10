@@ -127,7 +127,6 @@
 					{"ARMST_cigarettes", 0.2},
 					{"armst_item_chigarette", 0.19},
 					{"tf_anprc148jem", 3},
-					{"armst_scanerart", 17},
 					{"ARMST_batteries", 0.65},
 					
 					
@@ -433,7 +432,6 @@
 					{"armst_arthelp", 4},
 					{"armst_medperchatki", 0.4},
 					{"armst_scaner", 5},
-					{"armst_scanerart", 4.6},
 					{"armst_doska", 1},
 					{"armst_bochka", 1.2},
 					{"armst_545", 0.06},
