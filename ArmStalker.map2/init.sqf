@@ -62,5 +62,17 @@ MASSIVOBJECTSSSS=[4100,4100] nearObjects 6000;
 		sleep 5;
 	};	
 };
-
+sleep 5;
 player setVariable ["ARMST_artdetector",1];
+ARMY_TRADER switchmove "InBaseMoves_HandsBehindBack1";
+BANDITS_TRADER switchmove "Acts_AidlPercMstpSnonWnonDnon_warmup_4_loop";
+BANDITS_TRADER_1 switchmove "InBaseMoves_SittingRifle1";
+BARMEN switchmove "HubBriefing_lookAround2";
+BARMEN_SEBJAN switchmove "HubSittingChairUB_idle1";
+DOLGS_TRADER1 switchmove "HubStandingUB_idle1";
+FREEDOM_TRADER switchmove "InBaseMoves_HandsBehindBack1";
+FREEDOMs_BARMEN switchmove "InBaseMoves_SittingRifle1";
+MERCENARIES_TRADER switchmove "InBaseMoves_Lean1";
+SCIENCES_TRADER switchmove "HubStandingUC_idle1";
+STAKLER_TRADER switchmove "HubSittingChairUC_idle3";
+SUPER_BARMEN switchmove "HubSittingChairUC_idle3";
