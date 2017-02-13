@@ -106,7 +106,8 @@
 					{"ARMST_cigarettes", 0.17},
 					{"armst_item_chigarette", 0.19},
 					{"tf_anprc148jem", 4.3},
-					{"armst_scanerart", 15},
+					{"armst_item_detectors_otklick", 13},
+					{"armst_item_detectors_medved", 26},
 					{"ARMST_batteries", 0.5},
 					
 					//Chemlight
@@ -164,9 +165,9 @@
 					//Gasmask
 					{"G_Bandanna_khk", 0.2},
 					{"G_Bandanna_oli", 0.2},
-					{"armst_respirator", 1.0},
-					{"armst_Gasslon", 3},
-					{"armst_GasP5", 4.5}
+					{"armst_respirator", 1.15},
+					{"armst_Gasslon", 3.3},
+					{"armst_GasP5", 5.7}
 					
 				};
 			};

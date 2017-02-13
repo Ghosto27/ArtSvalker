@@ -105,7 +105,9 @@ class SCIENCES_TRADER
 					{"armst_PortableLight", 3},
 					{"armst_Camper", 5},
 					
-					{"armst_scanerart", 10},
+					{"armst_item_detectors_otklick", 8},
+					{"armst_item_detectors_medved", 15},
+					{"armst_item_detectors_svarog", 20},
 					{"ARMST_batteries", 0.3},
 					
 					{"Chemlight_red", 0.4},

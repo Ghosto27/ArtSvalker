@@ -197,8 +197,26 @@ if (( _state == 1 ) && ("ARMST_batteries" in (items player + assignedItems playe
 		};
 	};
 };
+/*
+Armst_artefact_trigger = 
+{
+_artefact = _this select 0;
+_chance = _this select 1;
 
-
+	if (("armst_item_detectors_otklick" in (assignedItems player)) or ("armst_item_detectors_medved" in (assignedItems player)) or ("armst_item_detectors_svarog" in (assignedItems player))) then
+	{
+		if  (_chance >= (random 100)) then 
+		{
+		playsound "geiger2_1";
+		_radius = 10;
+		_r07 = _radius * 10;
+		_position = position player;
+		_posRandom = _position vectorAdd [round(random (2*(-_r07))+ _r07), round(random (2*(-_r07))+ _r07), 0];  
+		_veh = _artefact createVehicle _posRandom;
+		};
+	};
+};
+*/
 armst_respawn_wake =
 	{
 	_condition = typeOf player;
@@ -206,6 +224,7 @@ armst_respawn_wake =
 
 		case "loner_private1": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -213,12 +232,14 @@ armst_respawn_wake =
 		case "loner_private2": { 
 			
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
 		};
 		case "loner_private3": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -226,6 +247,7 @@ armst_respawn_wake =
 		};
 		case "loner_private4": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -233,6 +255,7 @@ armst_respawn_wake =
 		};
 		case "loner_private5": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 		[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -240,6 +263,7 @@ armst_respawn_wake =
 		};
 		case "armst_coat_1": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -247,6 +271,7 @@ armst_respawn_wake =
 		};
 		case "armst_coat_2": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -254,6 +279,7 @@ armst_respawn_wake =
 		};
 		case "armst_coat_3": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -261,6 +287,7 @@ armst_respawn_wake =
 		};
 		case "armst_coat_4": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -268,6 +295,7 @@ armst_respawn_wake =
 		};
 		case "armst_coat_5": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -275,6 +303,7 @@ armst_respawn_wake =
 		};
 		case "armst_coat_6": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -282,6 +311,7 @@ armst_respawn_wake =
 		};
 		case "armst_coat_7": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -289,6 +319,7 @@ armst_respawn_wake =
 		};
 		case "armst_coat_8": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -296,6 +327,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -303,6 +335,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice_1": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -310,6 +343,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice_2": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -317,6 +351,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice_3": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -324,6 +359,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice_4": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -331,6 +367,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice_5": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -338,6 +375,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice_6": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -345,6 +383,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice_7": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -352,6 +391,7 @@ armst_respawn_wake =
 		};
 		case "armst_novice_8": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -359,6 +399,7 @@ armst_respawn_wake =
 		};
 		case "loner_l": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -366,6 +407,7 @@ armst_respawn_wake =
 		};
 		case "loner_b": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -373,6 +415,7 @@ armst_respawn_wake =
 		};
 		case "elite_loner1": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -380,6 +423,7 @@ armst_respawn_wake =
 		};
 		case "elite_loner2": { 
 		player setPosATL [762.079,610.247, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;
@@ -387,6 +431,7 @@ armst_respawn_wake =
 		};
 		case "clearsky_private": { 
 		player setPosATL [5520.276,461.430, 0.2];
+		sleep 1;
 			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
 		sleep 5;
    	 	[[player, ""], "switchMove"] call bis_fnc_mp;

@@ -1157,8 +1157,7 @@ class detector_display
 	class controlsBackground {
 		class MainBG : RscPicture {
 			idc = 2301;
-			text = "Scripts\pda\detektor_svarog.paa";		
-			moving = true;
+			text = "Scripts\pda\detektor_svarog.paa";	
 			x = 0; y = 0;
 			w = 1; h = 1;
 			colorText[] = {1,1,1,1};

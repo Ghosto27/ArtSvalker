@@ -35,6 +35,7 @@ ARMST_dragster_dblclick_on_item={
 		case "ARMST_laptop" : 			{  (findDisplay 602) closeDisplay 100;[player] spawn ARMST_laptop;  		}; 
 		case "ARMST_sleepingbag" :  	{  (findDisplay 602) closeDisplay 100;[player] spawn armst_matras_placer;   }; 
 		case "armst_scanerart" :  	{  (findDisplay 602) closeDisplay 100; createdialog "detector_display";   }; 
+		case "armst_item_detectors_svarog" :  	{  (findDisplay 602) closeDisplay 100; createdialog "detector_display";   }; 
 		
 		case "Item_MEAT_Unstab" : 		{  (findDisplay 602) closeDisplay 100;[player] spawn usd_MEAT_Unstab;       }; 
 		case "Item_FIRE_Unstab" : 		{  (findDisplay 602) closeDisplay 100;[player] spawn usd_FIRE_Unstab;       }; 

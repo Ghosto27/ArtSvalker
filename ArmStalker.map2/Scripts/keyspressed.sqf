@@ -13,15 +13,32 @@
 			player playActionNow _anim;
 		};
 		case 20: {
-			call ARMST_Radiation_ShowRadimetr;
+				call ARMST_Radiation_ShowRadimetr;
 		};
 		case 22: {
-			private _dialog = findDisplay 88666;
-			if (isNull _dialog && !(player getVariable ['AGM_isCaptive', false]) && !(player getVariable ['AGM_isUnconscious', false])) then {
-				call ARMST_pda_open;
-			}else{
-				_dialog closeDisplay 100;
-			};				
+		
+			if ("armst_item_detectors_medved" in (assignedItems player)) then 
+				{
+				call ARMST_art_detector_medved_open;
+				};
+			if ("armst_item_detectors_otklick" in (assignedItems player)) then 
+				{
+				call ARMST_art_detector_otklick_open;
+				};
+			if ("armst_item_detectors_svarog" in (assignedItems player)) then 
+				{
+				createdialog "detector_display";
+				};
+			if ("armst_item_pda" in (assignedItems player)) then 
+				{
+					private _dialog = findDisplay 88666;
+					if (isNull _dialog && !(player getVariable ['AGM_isCaptive', false]) && !(player getVariable ['AGM_isUnconscious', false])) then {
+					call ARMST_pda_open;
+					}else{
+					_dialog closeDisplay 100;
+					};		
+				};
+					
 		};
 		case 36: {
 			private _dialog = findDisplay 88300;

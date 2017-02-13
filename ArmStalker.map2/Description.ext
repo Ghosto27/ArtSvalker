@@ -52,6 +52,7 @@
 	#include "scripts\craft\craft.hpp"
 	#include "scripts\keypad\keypad.hpp"
 	#include "scripts\notebook\notebook.hpp"
+	#include "scripts\detectors\detectors.hpp"
 	class CfgRemoteExec
 	{        
 	    class Functions

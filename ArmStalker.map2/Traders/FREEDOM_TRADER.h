@@ -167,7 +167,9 @@ class FREEDOM_TRADER
 					{"armst_BagFence", 1.5},
 					{"armst_Camper", 2},
 					
-					{"ARMST_artdetector", 12},
+					{"armst_item_detectors_otklick", 17},
+					{"armst_item_detectors_medved", 23},
+					{"armst_item_detectors_svarog", 37},
 					{"ARMST_batteries", 0.3},
 					
 					{"HandGrenade", 4},
@@ -530,18 +532,18 @@ class FREEDOM_TRADER
 					{"Armst_BalaclavaFreed", 0.2},
 					{"G_Balaclava_oli", 0.2},
 					{"armst_respirator", 1},
-					{"armst_Gasslon", 10},
-					{"armst_GasP5", 15},
-					{"armst_GasP7", 20},
-					{"armst_Gasscout", 10},
-					{"armst_BioGasMaskG25", 30},
+					{"armst_Gasslon", 1},
+					{"armst_GasP5", 1},
+					{"armst_GasP7", 1},
+					{"armst_Gasscout", 1},
+					{"armst_BioGasMaskG25", 1},
 					
 					//Vests
 					{"Tarzan_w", 10},
 					{"Smersh_kora_SVD_Freedom", 12},
 					{"Smersh_kora_AK_Freedom", 14},
 					{"Smersh_kora_PK_Freedom", 16},
-					{"Armst_sevasvoboda", 350},
+					{"Armst_sevasvoboda", 20},
 					{"Armst_ekzofreedom", 700},
 					
 					//Backpacks

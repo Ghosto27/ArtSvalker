@@ -105,7 +105,9 @@
 					{"tf_anprc148jem", 4},
 					{"armst_arthelp", 70},
 					
-					{"armst_scanerart", 20},
+					{"armst_item_detectors_otklick", 19},
+					{"armst_item_detectors_medved", 28},
+					{"armst_item_detectors_svarog", 52},
 					{"ARMST_batteries", 0.9},
 					
 					

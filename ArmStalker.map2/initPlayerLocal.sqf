@@ -21,6 +21,7 @@ Boost = 50;
 [] execVM "scripts\night_fogs.sqf";
 [] execVM "scripts\dead_fogs.sqf";
 [] execVM "scripts\pda\fn_inv.sqf";
+[] execVM "scripts\detectors\fn_detectors.sqf";
 
 player addEventHandler ["hit", {[_this] spawn armst_broken_gas}];
 [] spawn

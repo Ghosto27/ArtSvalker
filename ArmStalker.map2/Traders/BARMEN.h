@@ -516,10 +516,10 @@
 					{"G_Bandanna_blk", 0.2},
 					
 					{"armst_respirator", 1},
-					{"armst_Gasslon", 10},
-					{"armst_GasP5", 15},
-					{"armst_GasP7", 20},
-					{"armst_Gasscout", 15},
+					{"armst_Gasslon", 1},
+					{"armst_GasP5", 1},
+					{"armst_GasP7", 1},
+					{"armst_Gasscout", 1},
 					
 					//Vests
 					{"6B3", 12},
