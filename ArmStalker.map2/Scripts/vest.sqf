@@ -1,13 +1,24 @@
 
 while{true}do{
 	_vest = vest player;
-	if (_vest in ["Armst_ekzo","Armst_ekzo2","Armst_ekzo3"]) then {
+	if (_vest in ["Armst_ekzo","Armst_ekzo2","Armst_ekzo3","Armst_ekzodolg","Armst_ekzodolg2","Armst_ekzofreedom","Armst_ekzofreedom2","Armst_ekzoarmy","Armst_ekzomercenaries","Armst_ekzomonolith"]) then 
+	{
+		if ("ARMST_akkum" in (items player + assignedItems player)) then 
+		{
 		_fatigue = getFatigue player;
 		player setFatigue (_fatigue - 1);
-	};
-	if (_vest in ["Armst_ekzodolg","Armst_ekzodolg2","Armst_ekzofreedom","Armst_ekzofreedom2","Armst_ekzoarmy","Armst_ekzomercenaries","Armst_ekzomonolith"]) then {
+		player forcewalk false;
+		}
+		else
+		{
 		_fatigue = getFatigue player;
-		player setFatigue (_fatigue - 0.4);
+		player setFatigue (_fatigue + 1);
+		player forcewalk true;
+		};
+	}
+	else
+	{
+	player forcewalk false;
 	};
-	sleep 10;
+	sleep 3;
 };

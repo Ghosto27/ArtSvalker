@@ -138,7 +138,7 @@
 					
 					{"tf_anprc148jem", 2},
 					{"armst_item_pda", 2.5},
-					
+					{"ARMST_akkum", 6},
 					//baricad
 					{"armst_bochka", 6},
 					{"armst_Razorwire", 15},

@@ -197,26 +197,54 @@ if (( _state == 1 ) && ("ARMST_batteries" in (items player + assignedItems playe
 		};
 	};
 };
-/*
-Armst_artefact_trigger = 
+armst_spawn_artefact = 
 {
-_artefact = _this select 0;
-_chance = _this select 1;
-
-	if (("armst_item_detectors_otklick" in (assignedItems player)) or ("armst_item_detectors_medved" in (assignedItems player)) or ("armst_item_detectors_svarog" in (assignedItems player))) then
+_epicenter = _this select 0;
+_range = _this select 1;
+_artefacts = _this select 2;
+_chance = _this select 3;
+_pos = _epicenter modelToWorld [((random _range)-(random _range)),((random _range)-(random _range)),(random 3)];
+		
+	if ("armst_item_detectors_otklick" in (assignedItems player)) then
 	{
 		if  (_chance >= (random 100)) then 
 		{
-		playsound "geiger2_1";
-		_radius = 10;
-		_r07 = _radius * 10;
-		_position = position player;
-		_posRandom = _position vectorAdd [round(random (2*(-_r07))+ _r07), round(random (2*(-_r07))+ _r07), 0];  
-		_veh = _artefact createVehicle _posRandom;
-		};
+				ARMST_TEXTXX2 = format ["<img image='\armst\armst_item\detectors\item_detector_1_ico.paa' size='2' shadow='true'/>"];
+				ARMST_TEXTXX1 = "Рядом обнаружен артефакт.";
+				[composeText [parseText ARMST_TEXTXX2, lineBreak, parseText ARMST_TEXTXX1]] call AGM_Core_fnc_displayTextStructured;
+				_artefact = _artefacts createVehicle _pos;
+				_artefact setVelocity [((random _range)-(random _range)),((random _range)-(random _range)),(random 7)];
+				sleep 120;
+				deletevehicle _artefact;
+		};	
+	};
+	if ("armst_item_detectors_medved" in (assignedItems player)) then
+	{
+		if  (_chance >= (random 80)) then 
+		{
+				ARMST_TEXTXX2 = format ["<img image='\armst\armst_item\detectors\item_detector_2_ico.paa' size='2' shadow='true'/>"];
+				ARMST_TEXTXX1 = "Рядом обнаружен артефакт.";
+				[composeText [parseText ARMST_TEXTXX2, lineBreak, parseText ARMST_TEXTXX1]] call AGM_Core_fnc_displayTextStructured;
+				_artefact = _artefacts createVehicle _pos;
+				_artefact setVelocity [((random _range)-(random _range)),((random _range)-(random _range)),(random 7)];
+				sleep 120;
+				deletevehicle _artefact;
+		};	
+	};
+	if ("armst_item_detectors_svarog" in (assignedItems player)) then
+	{
+		if  (_chance >= (random 60)) then 
+		{
+				ARMST_TEXTXX2 = format ["<img image='\armst\armst_item\detectors\item_detector_3_ico.paa' size='2' shadow='true'/>"];
+				ARMST_TEXTXX1 = "Рядом обнаружен артефакт.";
+				[composeText [parseText ARMST_TEXTXX2, lineBreak, parseText ARMST_TEXTXX1]] call AGM_Core_fnc_displayTextStructured;
+				_artefact = _artefacts createVehicle _pos;
+				_artefact setVelocity [((random _range)-(random _range)),((random _range)-(random _range)),(random 7)];
+				sleep 120;
+				deletevehicle _artefact;
+		};	
 	};
 };
-*/
 armst_respawn_wake =
 	{
 	_condition = typeOf player;

@@ -12,6 +12,13 @@ while {true} do {
 					_slp = selectRandom [60,65,70,75,80,85,90];
 					_ftg=_slp/100;	
 				};
+			case "armst_gasmaskBastard": 
+				{	
+					_ifff=true;
+					_slp = selectRandom [60,65,70,75,80,85,90];
+					_ftg=_slp/100;	
+				};
+				
 			case "armst_Gasslon":
 				{ 
 					_ifff=true;
@@ -69,20 +76,20 @@ while {true} do {
 			case "armst_R5_filter":
 				{ 
 					_ifff=true;
-					_slp=15;
-					_ftg=0.15;	
+					_slp = selectRandom [55,60,65,70,75,80,85];
+					_ftg=_slp/120;	
 				};
 			case "armst_R5_P_filter":
 				{ 
 					_ifff=true;
-					_slp=10;
+					_slp=30;
 					_ftg=0.15;	
 				};
 			case "armst_R5_SH2_filter":
 				{ 
 					_ifff=true;
-					_slp=5;
-					_ftg=0.15;	
+					_slp=15;
+					_ftg=0.1;	
 				};
 			default
 				{

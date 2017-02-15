@@ -16,12 +16,12 @@ Boost = 50;
 [] execVM "scripts\vest_seva.sqf";
 [] execVM "scripts\gasmask.sqf";
 [] execVM "scripts\gasmask_ballon.sqf";
+[] execVM "scripts\pda\fn_inv.sqf";
+[] execVM "scripts\detectors\fn_detectors.sqf";
 [] execVM "scripts\local_anomals.sqf";
 [] execVM "scripts\tempbody_system.sqf";
 [] execVM "scripts\night_fogs.sqf";
 [] execVM "scripts\dead_fogs.sqf";
-[] execVM "scripts\pda\fn_inv.sqf";
-[] execVM "scripts\detectors\fn_detectors.sqf";
 
 player addEventHandler ["hit", {[_this] spawn armst_broken_gas}];
 [] spawn

@@ -144,6 +144,7 @@
 					{"armst_spicki", 1},
 					{"tf_anprc148jem", 1},
 					{"ARMST_cigarettes", 0.2},
+					{"ARMST_akkum", 1},
 										
 					{"ItemCompass", 1},
 					{"armst_item_pda", 1},

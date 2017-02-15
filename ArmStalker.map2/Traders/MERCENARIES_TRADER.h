@@ -198,6 +198,7 @@
 					{"ARMST_lighter", 0.2},
 					{"ARMST_sleepingbag", 0.5},
 					{"ARMST_cigarettes", 0.2},
+					{"ARMST_akkum", 6},
 
 					//Food
 					{"Armst_item_can",0.4},

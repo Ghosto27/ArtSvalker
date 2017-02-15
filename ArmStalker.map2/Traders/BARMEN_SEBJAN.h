@@ -106,8 +106,8 @@
 					{"armst_arthelp", 70},
 					
 					{"armst_item_detectors_otklick", 19},
-					{"armst_item_detectors_medved", 28},
-					{"armst_item_detectors_svarog", 52},
+					{"armst_item_detectors_medved", 50},
+					{"armst_item_detectors_svarog", 100},
 					{"ARMST_batteries", 0.9},
 					
 					
@@ -128,6 +128,7 @@
 					{"av_bandage_blue", 2},
 					{"av_bandage_white", 2},
 					{"USSR_GUITAR", 5},
+					{"ARMST_akkum", 6},
 					
 					//Money
 					{"armst_money100R", 1.0},

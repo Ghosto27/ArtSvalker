@@ -107,7 +107,7 @@ class SCIENCES_TRADER
 					
 					{"armst_item_detectors_otklick", 8},
 					{"armst_item_detectors_medved", 15},
-					{"armst_item_detectors_svarog", 20},
+					{"armst_item_detectors_svarog", 50},
 					{"ARMST_batteries", 0.3},
 					
 					{"Chemlight_red", 0.4},
@@ -121,6 +121,7 @@ class SCIENCES_TRADER
 					{"SmokeShellRed", 2},
 					{"SmokeShellOrange", 2},
 					{"SmokeShellBlue", 2},
+					{"ARMST_akkum", 6},
 					
 					{"Armst_item_bred",0.25},
 					{"Armst_item_kolbasa",0.35},

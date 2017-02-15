@@ -154,6 +154,7 @@
 					{"Chemlight_green", 0.4},
 					{"Chemlight_blue", 0.4},
 					{"Chemlight_yellow", 0.4},
+					{"ARMST_akkum", 6},
 
 					//Food
 					{"Armst_item_can", 0.4},

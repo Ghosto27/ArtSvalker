@@ -107,7 +107,6 @@
 					{"armst_item_chigarette", 0.19},
 					{"tf_anprc148jem", 4.3},
 					{"armst_item_detectors_otklick", 13},
-					{"armst_item_detectors_medved", 26},
 					{"ARMST_batteries", 0.5},
 					
 					//Chemlight

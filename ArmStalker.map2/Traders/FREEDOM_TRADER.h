@@ -168,8 +168,8 @@ class FREEDOM_TRADER
 					{"armst_Camper", 2},
 					
 					{"armst_item_detectors_otklick", 17},
-					{"armst_item_detectors_medved", 23},
-					{"armst_item_detectors_svarog", 37},
+					{"armst_item_detectors_medved", 37},
+					{"armst_item_detectors_svarog", 80},
 					{"ARMST_batteries", 0.3},
 					
 					{"HandGrenade", 4},
@@ -186,6 +186,8 @@ class FREEDOM_TRADER
 					{"Chemlight_green", 0.4},
 					{"Chemlight_blue", 0.4},
 					{"Chemlight_yellow", 0.4},
+					{"ARMST_akkum", 6},
+					{"ARMST_kosyak", 0.23},
 					
 					//Food
 					{"Armst_item_can", 0.4},
