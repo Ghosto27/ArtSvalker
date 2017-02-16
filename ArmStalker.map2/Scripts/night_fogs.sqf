@@ -1,3 +1,4 @@
+/*
 waitUntil {!isNull player};
 
 doofog = {
@@ -83,3 +84,4 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
         };
     };
 };
+*/

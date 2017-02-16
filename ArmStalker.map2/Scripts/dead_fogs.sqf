@@ -65,33 +65,89 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
 							{
 							if ((backpack player) in ["armst_seva_backpack","armst_backpack_ballon","armst_seva_science_backpack"]) then 
 								{
-								};				
-							};			
-						};	
-						sleep 10;
+								
+								}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
+								
+							}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};			
+						}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};	
 					}
-				else 
-				{
-				"dynamicBlur" ppEffectEnable true;   
-				"dynamicBlur" ppEffectAdjust [1];   
-				"dynamicBlur" ppEffectCommit 0;     
-				"dynamicBlur" ppEffectAdjust [0.0];  
-				// "dynamicBlur" ppEffectCommit 17;  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectAdjust [3];  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectEnable false; 
-				};
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
             };
+				sleep 10;
         };
 		_meters2 = player distance2D dead_fog_base;
-        if(_meters2 < 200)  then {
+        if(_meters2 < 200) then {
             if (player getVariable ["playerfog", -1] < time) then 
 			{
                 player setVariable ["playerfog", floor time + 5];
@@ -104,32 +160,89 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
 							{
 							if ((backpack player) in ["armst_seva_backpack","armst_backpack_ballon","armst_seva_science_backpack"]) then 
 								{
-								};				
-							};			
-						};		
-						sleep 10;
+								
+								}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
+								
+							}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};			
+						}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};	
 					}
-				else {
-				"dynamicBlur" ppEffectEnable true;   
-				"dynamicBlur" ppEffectAdjust [1];   
-				"dynamicBlur" ppEffectCommit 0;     
-				"dynamicBlur" ppEffectAdjust [0.0];  
-				// "dynamicBlur" ppEffectCommit 17;  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectAdjust [3];  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectEnable false; 
-				};
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
             };
+				sleep 10;
         };
 		_meters3 = player distance2D dead_fog_yantar;
-        if(_meters3 < 200)  then {
+        if(_meters3 < 200) then {
             if (player getVariable ["playerfog", -1] < time) then 
 			{
                 player setVariable ["playerfog", floor time + 5];
@@ -142,32 +255,89 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
 							{
 							if ((backpack player) in ["armst_seva_backpack","armst_backpack_ballon","armst_seva_science_backpack"]) then 
 								{
-								};				
-							};			
-						};		
-						sleep 10;
+								
+								}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
+								
+							}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};			
+						}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};	
 					}
-				else {
-				"dynamicBlur" ppEffectEnable true;   
-				"dynamicBlur" ppEffectAdjust [1];   
-				"dynamicBlur" ppEffectCommit 0;     
-				"dynamicBlur" ppEffectAdjust [0.0];  
-				// "dynamicBlur" ppEffectCommit 17;  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectAdjust [3];  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectEnable false; 
-				};
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
             };
+				sleep 10;
         };
 		_meters4= player distance2D dead_fog_forest;
-        if(_meters4 < 400)  then {
+        if(_meters4 < 400) then {
             if (player getVariable ["playerfog", -1] < time) then 
 			{
                 player setVariable ["playerfog", floor time + 5];
@@ -180,32 +350,89 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
 							{
 							if ((backpack player) in ["armst_seva_backpack","armst_backpack_ballon","armst_seva_science_backpack"]) then 
 								{
-								};				
-							};			
-						};		
-						sleep 10;
+								
+								}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
+								
+							}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};			
+						}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};	
 					}
-				else {
-				"dynamicBlur" ppEffectEnable true;   
-				"dynamicBlur" ppEffectAdjust [1];   
-				"dynamicBlur" ppEffectCommit 0;     
-				"dynamicBlur" ppEffectAdjust [0.0];  
-				// "dynamicBlur" ppEffectCommit 17;  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectAdjust [3];  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectEnable false; 
-				};
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
             };
+				sleep 10;
         };
 		_meters5 = player distance2D dead_fog_forest_1;
-        if(_meters5 < 400)  then {
+        if(_meters5 < 400) then {
             if (player getVariable ["playerfog", -1] < time) then 
 			{
                 player setVariable ["playerfog", floor time + 5];
@@ -218,32 +445,89 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
 							{
 							if ((backpack player) in ["armst_seva_backpack","armst_backpack_ballon","armst_seva_science_backpack"]) then 
 								{
-								};				
-							};			
-						};		
-						sleep 10;
+								
+								}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
+								
+							}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};			
+						}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};	
 					}
-				else {
-				"dynamicBlur" ppEffectEnable true;   
-				"dynamicBlur" ppEffectAdjust [1];   
-				"dynamicBlur" ppEffectCommit 0;     
-				"dynamicBlur" ppEffectAdjust [0.0];  
-				// "dynamicBlur" ppEffectCommit 17;  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectAdjust [3];  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectEnable false; 
-				};
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
             };
+				sleep 10;
         };
 		_meters6 = player distance2D dead_fog_bunker;
-        if(_meters6 < 400)  then {
+        if(_meters6 < 400) then {
             if (player getVariable ["playerfog", -1] < time) then 
 			{
                 player setVariable ["playerfog", floor time + 5];
@@ -256,32 +540,89 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
 							{
 							if ((backpack player) in ["armst_seva_backpack","armst_backpack_ballon","armst_seva_science_backpack"]) then 
 								{
-								};				
-							};			
-						};		
-						sleep 10;
+								
+								}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
+								
+							}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};			
+						}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};	
 					}
-				else {
-				"dynamicBlur" ppEffectEnable true;   
-				"dynamicBlur" ppEffectAdjust [1];   
-				"dynamicBlur" ppEffectCommit 0;     
-				"dynamicBlur" ppEffectAdjust [0.0];  
-				// "dynamicBlur" ppEffectCommit 17;  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectAdjust [3];  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectEnable false; 
-				};
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
             };
+				sleep 10;
         };
 		_meters7 = player distance2D dead_undeground;
-        if(_meters7 < 200)  then {
+        if(_meters7 < 200) then {
             if (player getVariable ["playerfog", -1] < time) then 
 			{
                 player setVariable ["playerfog", floor time + 5];
@@ -294,32 +635,89 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
 							{
 							if ((backpack player) in ["armst_seva_backpack","armst_backpack_ballon","armst_seva_science_backpack"]) then 
 								{
-								};				
-							};			
-						};		
-						sleep 10;
+								
+								}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
+								
+							}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};			
+						}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};	
 					}
-				else {
-				"dynamicBlur" ppEffectEnable true;   
-				"dynamicBlur" ppEffectAdjust [1];   
-				"dynamicBlur" ppEffectCommit 0;     
-				"dynamicBlur" ppEffectAdjust [0.0];  
-				// "dynamicBlur" ppEffectCommit 17;  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectAdjust [3];  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectEnable false; 
-				};
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
             };
+				sleep 10;
         };
 		_meters8 = player distance2D dead_dead_city;
-        if(_meters8 < 500)  then {
+        if(_meters8 < 500) then {
             if (player getVariable ["playerfog", -1] < time) then 
 			{
                 player setVariable ["playerfog", floor time + 5];
@@ -332,29 +730,86 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
 							{
 							if ((backpack player) in ["armst_seva_backpack","armst_backpack_ballon","armst_seva_science_backpack"]) then 
 								{
-								};				
-							};			
-						};		
-						sleep 10;
+								
+								}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
+								
+							}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};			
+						}
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};	
 					}
-				else {
-				"dynamicBlur" ppEffectEnable true;   
-				"dynamicBlur" ppEffectAdjust [1];   
-				"dynamicBlur" ppEffectCommit 0;     
-				"dynamicBlur" ppEffectAdjust [0.0];  
-				// "dynamicBlur" ppEffectCommit 17;  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectAdjust [3];  
-				"dynamicBlur" ppEffectCommit 10;  
-				playsound "kashel";
-				sleep 10;
-				player setDammage (getDammage player + 0.01);
-				"dynamicBlur" ppEffectEnable false; 
-				};
+								else 
+								{
+								"dynamicBlur" ppEffectEnable true;   
+								"dynamicBlur" ppEffectAdjust [1];   
+								"dynamicBlur" ppEffectCommit 0;     
+								"dynamicBlur" ppEffectAdjust [0.0];  
+								// "dynamicBlur" ppEffectCommit 17;  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectAdjust [3];  
+								"dynamicBlur" ppEffectCommit 10;  
+								playsound "kashel";
+								sleep 10;
+								player setDammage (getDammage player + 0.01);
+								"dynamicBlur" ppEffectEnable false; 
+								};
             };
+				sleep 10;
         };
-    };
+	};
 };
