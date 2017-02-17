@@ -183,8 +183,7 @@ _menus =
            ["Открыть врата.", {[_unit] spawn Armst_door_dolg}, "", "", "",  -1,true, cursorTarget isKindOf "Land_HBarrierWall4_f" && player isKindOf "Dolg_private2"],
            ["Открыть врата.", {[_unit] spawn Armst_freedom_mercenaries}, "", "", "",  -1,true, cursorTarget isKindOf "Land_Mil_WallBig_4m_F" && player isKindOf "freedom_private"],
            ["Открыть врата.", {[_unit] spawn Armst_freedom_mercenaries}, "", "", "",  -1,true, cursorTarget isKindOf "Land_Mil_WallBig_4m_F" && player isKindOf "freedom_private2"],
-           ["Открыть гермодверь", {[_unit] spawn Armst_science_door}, "", "", "",  -1,true, cursorTarget isKindOf "Land_Mil_WallBig_Corner_F" && player isKindOf "hazmat_2"],
-           ["Открыть гермодверь", {[_unit] spawn Armst_science_door}, "", "", "",  -1,true, cursorTarget isKindOf "Land_Mil_WallBig_Corner_F" && player isKindOf "Basic_Voen"],
+           ["Открыть гермодверь", {[_unit] spawn Armst_science_door}, "", "", "",  -1,true, cursorTarget isKindOf "Land_Mil_WallBig_Corner_F"],
            ["Открыть дверь", {[_unit] spawn Armst_army_door}, "", "", "",  -1,true, cursorTarget isKindOf "Land_Mil_WallBig_Corner_F" && player isKindOf "Voen_private"],
            //["Собрать травку", {player additem "ARMST_kosyak";deleteVehicle _unit;}, "", "", "",  -1,true, cursorTarget isKindOf "xCam_c_Flower_Tansy" && player isKindOf "freedom_private" or player isKindOf "freedom_private2"],
 		   ["Открыть дверь", {[_unit] spawn Armst_army_garaj}, "", "", "",  -1,true, cursorTarget isKindOf "Land_Canal_WallSmall_10m_F" && player isKindOf "Voen_private"]

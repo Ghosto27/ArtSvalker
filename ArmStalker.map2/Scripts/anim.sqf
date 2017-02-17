@@ -51,10 +51,13 @@ sleep 5;
 };
 
 Armst_science_door = {
-[science_door, "door_sound",15] call CBA_fnc_globalSay3d;
-[-2, {[science_door, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
-sleep 5;
-[-2, {[science_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+if (player isKindOf "elite_voen" or player isKindOf "army_l" or player isKindOf "army_b" or player isKindOf "Voen_private" or player isKindOf "Armst_doctor" or player isKindOf "Armst_doctor2" or player isKindOf "Armst_doctor3" or player isKindOf "hazmat_2") then 
+	{
+		[science_door, "door_sound",15] call CBA_fnc_globalSay3d;
+		[-2, {[science_door, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+		sleep 5;
+		[-2, {[science_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	};
 };
 Armst_freedom_door = 
 {
