@@ -1,4 +1,5 @@
 
+WEST setFriend [CIVILIAN, 0];
 	[] spawn ARMST_fnc_locationHUD;
 	waitUntil{!isNull (findDisplay 46)};
 		missionKeyspressed = compileFinal preprocessFile "scripts\keyspressed.sqf";
@@ -31,7 +32,7 @@ player addEventHandler ["hit", {[_this] spawn armst_broken_gas}];
 		["player", [interaction_key], -23, ["scripts\army.sqf", "main"]] call CBA_ui_fnc_add;
 		["player", [interaction_key], -21, ["scripts\barricade_int.sqf", "main"]] call CBA_ui_fnc_add;
 		
-		["player", [interaction_key], -8, ["\armst\armst_misc\armst_game\scripts\remains_menu.sqf", "main"]] call CBA_ui_fnc_add;
+		["player", [interaction_key], -8, ["scripts\remains_menu.sqf", "main"]] call CBA_ui_fnc_add;
 		["player", [interaction_key], -3, ["scripts\interactionMED_menu.sqf", "main"]] call CBA_ui_fnc_add;
 		["player", [interaction_key_self], -6, ["\armst\armst_misc\armst_game\scripts\art_kontainer_self_menu.sqf", "main"]] call CBA_ui_fnc_add;
 		["player", [interaction_key_self], -17, ["\armst\armst_misc\armst_game\scripts\animation.sqf", "main"]] call CBA_ui_fnc_add;
@@ -48,7 +49,7 @@ player addEventHandler ["hit", {[_this] spawn armst_broken_gas}];
 player addrating 100000;
 
 sleep 10;
-
+WEST setFriend [CIVILIAN, 0];
 _mydamage_eh2 = player addEventHandler ["Fired", {[player] spawn player_fired}];
 player setvariable ["ARTDETECTOR",0];
 player setvariable ["armst_pda_web",0];

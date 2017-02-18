@@ -25,7 +25,7 @@ private ["_log", "_pass", "_check", "_flag", "_login", "_password"];
 	if (_flag) then {
 		[] spawn ARMST_notebook_worktable_open;
 	}else{
-		hint "Пара логин/пароль не верна."
+		hint "Пара логин/пароль не верна.";
 	};
 };
 ARMST_notebook_worktable_open={
@@ -77,12 +77,12 @@ ARMST_notebook_faction_control_open={
 	_fractID=((_fractID select 1) select 0) select 0;
 	_model=[];
 	switch (_fractID) do { 
-		case 1 : 	{ _model = ["hazmat_2"]; }; 
+		case 1 : 	{ _model = ["hazmat_2","Armst_doctor","Armst_doctor2","Armst_doctor3"]; }; 
 		case 2 : 	{ _model = ["loner_private1","loner_private2","loner_private3","loner_private4","loner_private5","elite_loner1","elite_loner2"]; }; 
 		//case 3 : 	{ _model=""; };     // РЕНЕГАТЫ
 		case 4 : 	{ _model = ["freedom_private","freedom_private2"]; }; 
-		case 5 : 	{ _model = ["bandits_private","bandits_private2"]; }; 
-		case 6 : 	{ _model = ["Dolg_private","Dolg_private2"]; }; 
+		case 5 : 	{ _model = ["bandits_private","bandits_private2","bandit_new_1","bandit_new_1_2","bandit_new_1_3"]; }; 
+		case 6 : 	{ _model = ["Dolg_private","Dolg_private2","Dolg_new_soldier"]; }; 
 		case 7 : 	{ _model = ["Voen_private","elite_Voen"]; }; 
 		case 8 : 	{ _model = ["monolith_private"]; }; 
 		case 9 : 	{ _model = ["mercenaries_private","mercenaries_private2"]; }; 
