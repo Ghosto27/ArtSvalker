@@ -1,5 +1,6 @@
 
 
+WEST setFriend [CIVILIAN, 0];
 if (isServer) then {
 	while {true} do {
 	    {

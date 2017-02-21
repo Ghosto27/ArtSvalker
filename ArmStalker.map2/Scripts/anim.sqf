@@ -70,6 +70,16 @@ if (player isKindOf "freedom_private" or player isKindOf "freedom_private2" or p
 	};
 };
 
+Armst_dolg_door = 
+{
+if (player isKindOf "Dolg_private" or player isKindOf "elite_dolg" or player isKindOf "dolg_l" or player isKindOf "dolg_b" or player isKindOf "Dolg_private2"or player isKindOf "Dolg_new_soldier") then 
+	{
+	[dolg_door, "door_sound",15] call CBA_fnc_globalSay3d;
+	[-2, {[dolg_door, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	sleep 5;
+	[-2, {[dolg_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	};
+};
 armst_status = {
 hint "Досье смотрите в КПК." 
 };
@@ -470,3 +480,9 @@ armst_respawn_wake =
 		};
 	};
 };
+    an_fnc_11 =
+    {
+        private["_unit"];
+        _unit = _this select 0;
+        [[_unit, "armst_rest_fire"], "switchMove"] call bis_fnc_mp;
+    };

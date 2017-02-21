@@ -43,6 +43,27 @@ player addrating 100000;
 		};
 	}];	
 
+[] spawn {
+MASSIVOBJECTSSSS=[4100,4100] nearObjects 6000;
+
+	while {true} do {
+	  	_arr2=(position player) nearObjects 1200;
+		{
+			if !(_x in _arr2) then {
+				if !(isPlayer _x) then {
+			  		_x hideObject true; 
+				};
+			}
+			else{
+				if !(isPlayer _x) then {
+				  	_x hideObject false; 
+				};
+				
+			};
+		}count MASSIVOBJECTSSSS;
+		sleep 5;
+	};	
+};
 sleep 5;
 player setVariable ["ARMST_artdetector",1];
 ARMY_TRADER switchmove "InBaseMoves_HandsBehindBack1";
