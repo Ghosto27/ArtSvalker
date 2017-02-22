@@ -69,6 +69,17 @@ if (player isKindOf "freedom_private" or player isKindOf "freedom_private2" or p
 	[-2, {[freedom_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
 	};
 };
+Armst_bandit_door = 
+{
+if (player isKindOf "bandits_private" or player isKindOf "bandits_private2" or player isKindOf "bandits_l" or player isKindOf "bandit_elite" or player isKindOf "armst_newbiebandit3" or player isKindOf "armst_newbiebandit2" or player isKindOf "armst_newbiebandit" or player isKindOf "bandit_new_1" or player isKindOf "bandit_new_1_2" or player isKindOf "bandit_new_1_3" or player isKindOf "bandit_new_2" or player isKindOf "bandit_new_2_3" or player isKindOf "bandit_new_2_2") then 
+	{
+	[bandit_door, "door_sound",15] call CBA_fnc_globalSay3d;
+	[-2, {[bandit_door, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	sleep 5;
+	[-2, {[bandit_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	};
+};
+
 
 Armst_dolg_door = 
 {

@@ -246,6 +246,8 @@
 					{"Armst_mut_dog",0.5},
 					{"Armst_mut_pauk",1.5},
 					{"Armst_mut_plot",1.5},
+					{"Armst_mut_cat",1.6},
+					{"Armst_mut_tushkano",0.15},
 					{"Armst_mut_psevdog",0.65},
 					{"Armst_mut_snork",3}
 				};

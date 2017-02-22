@@ -5,8 +5,8 @@ WEST setFriend [CIVILIAN, 0];
 		missionKeyspressed = compileFinal preprocessFile "scripts\keyspressed.sqf";
 		(findDisplay 46) displayAddEventHandler ["KeyDown","_this call missionKeyspressed"];
 
-#include "scripts\night.sqf";
-#include "scripts\compile_eat.sqf";	
+//#include "scripts\night.sqf";
+//#include "scripts\compile_eat.sqf";	
 #include "scripts\anim.sqf";	
 #include "scripts\pda\fn_inv.sqf";
 		
@@ -31,13 +31,13 @@ player addEventHandler ["hit", {[_this] spawn armst_broken_gas}];
 		["player", [interaction_key], -23, ["scripts\army.sqf", "main"]] call CBA_ui_fnc_add;
 		["player", [interaction_key], -21, ["scripts\barricade_int.sqf", "main"]] call CBA_ui_fnc_add;
 		
-		["player", [interaction_key], -8, ["scripts\remains_menu.sqf", "main"]] call CBA_ui_fnc_add;
-		["player", [interaction_key], -3, ["scripts\interactionMED_menu.sqf", "main"]] call CBA_ui_fnc_add;
+		["player", [interaction_key], -8, ["\armst\armst_misc\armst_game\scripts\remains_menu.sqf", "main"]] call CBA_ui_fnc_add;
+		["player", [interaction_key], -3, ["\armst\armst_misc\armst_game\scripts\interactionMED_menu.sqf", "main"]] call CBA_ui_fnc_add;
 		["player", [interaction_key_self], -6, ["\armst\armst_misc\armst_game\scripts\art_kontainer_self_menu.sqf", "main"]] call CBA_ui_fnc_add;
-		["player", [interaction_key_self], -17, ["scripts\animation.sqf", "main"]] call CBA_ui_fnc_add;
+		["player", [interaction_key_self], -17, ["\armst\armst_misc\armst_game\scripts\animation.sqf", "main"]] call CBA_ui_fnc_add;
 		
 		//["player", [interaction_key_self], -22, ["scripts\barricade.sqf", "main"]] call CBA_ui_fnc_add;
-		["player", [interaction_key_self], -30, ["scripts\guitar_self_menu.sqf", "main"]] call CBA_ui_fnc_add;
+		["player", [interaction_key_self], -30, ["\armst\armst_misc\armst_game\scripts\guitar_self_menu.sqf", "main"]] call CBA_ui_fnc_add;
 		["player", [interaction_key_self], -7, ["\armst\armst_misc\armst_game\scripts\interaction_self_menu.sqf", "main"]] call CBA_ui_fnc_add;
 		//["player", [interaction_key_self], -5, ["\armst\armst_misc\armst_game\scripts\shlemy_self_menu.sqf", "main"]] call CBA_ui_fnc_add;
 		//["player", [interaction_key_self], -2, ["\armst\armst_misc\armst_game\scripts\interactionMED_self_menu.sqf", "main"]] call CBA_ui_fnc_add;

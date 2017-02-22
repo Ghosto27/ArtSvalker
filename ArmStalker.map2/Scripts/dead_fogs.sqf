@@ -1,4 +1,4 @@
-
+/*
 armst_toxinfogs = {
 private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
         _inVehicle = (vehicle player != player);
@@ -813,3 +813,4 @@ private ["_obj","_pos","_fog1","_fog2","_fog3","_inVehicle"];
         };
 	};
 };
+*/

@@ -231,6 +231,9 @@ class SCIENCES_TRADER
 					{"Armst_mut_chimera",22},
 					{"Armst_mut_olen",6},
 					{"Armst_mut_pauk",6},
+					{"Armst_mut_cat",5},
+					{"Armst_mut_izlom",20},
+					{"Armst_mut_tushkano",1.3},
 					{"Armst_mut_poltergeist",15},
 					{"Armst_mut_psevdogigant",130},
 					{"Armst_mut_snork",3}

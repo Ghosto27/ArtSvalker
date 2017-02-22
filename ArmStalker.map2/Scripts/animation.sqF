@@ -33,6 +33,7 @@ _menus =
         ["animplay", "Список анимаций", _menuRsc, "", false], // menu stays open after selection
         [		
             ["Молиться",{[player] spawn an_fnc_molitva},"", "", "", -1, 1,  alive player ],
+            ["Получать сигнал от монолита",{[player] spawn an_fnc_12;},"", "", "", -1, 1, player isKindOf "monolith_private"],
             ["Размяться",{[player] spawn an_fnc_sport_press},"", "", "", -1, 1,  alive player ],
             ["Отдышаться",{[player] spawn an_fnc_1},"", "", "", -1, 1,  alive player ],
             ["Отдыхать у костра",{[player] spawn an_fnc_12;},"", "", "", -1, 1,  alive player ],
