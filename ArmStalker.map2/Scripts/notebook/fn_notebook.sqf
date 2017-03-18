@@ -78,12 +78,12 @@ ARMST_notebook_faction_control_open={
 	_model=[];
 	switch (_fractID) do { 
 		case 1 : 	{ _model = ["hazmat_2","Armst_doctor","Armst_doctor2","Armst_doctor3"]; }; 
-		case 2 : 	{ _model = ["loner_private1","loner_private2","loner_private3","loner_private4","loner_private5","elite_loner1","elite_loner2"]; }; 
-		//case 3 : 	{ _model=""; };     // РЕНЕГАТЫ
+		case 2 : 	{ _model = ["loner_private1","loner_private2","loner_private3","loner_private4","loner_private5"]; }; 
+		case 3 : 	{ _model=""; };     // РЕНЕГАТЫ
 		case 4 : 	{ _model = ["freedom_private","freedom_private2"]; }; 
-		case 5 : 	{ _model = ["bandits_private","bandits_private2","bandit_new_1","bandit_new_1_2","bandit_new_1_3","bandit_new_2","bandit_new_2_2","bandit_new_2_3"]; }; 
-		case 6 : 	{ _model = ["Dolg_private","Dolg_private2","Dolg_new_soldier"]; }; 
-		case 7 : 	{ _model = ["Voen_private","elite_Voen"]; }; 
+		case 5 : 	{ _model = ["bandits_private2"]; }; 
+		case 6 : 	{ _model = ["Dolg_private"]; }; 
+		case 7 : 	{ _model = ["Voen_private"]; }; 
 		case 8 : 	{ _model = ["monolith_private"]; }; 
 		case 9 : 	{ _model = ["mercenaries_private","mercenaries_private2"]; }; 
 		default 	{ _model = ["loner_private1","loner_private2","loner_private3","loner_private4","loner_private5"]; }; 

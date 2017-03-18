@@ -28,24 +28,16 @@
 					
 					//pistols
 					{"av_makarov", 4},
-					{"av_aps", 8}, 
+					{"av_aps", 7}, 
 					
 					//5.45
-					{"arifle_av_ak74m", 80},
-					{"arifle_av_ak74m_gp", 85},
-					{"arifle_av_ak105s", 120}, 
-					{"arifle_av_103", 140},
-					{"arifle_av_103_gp", 150},
-					
-					
-					//Уникал
-					{"av_pk_base",  295},
-					{"arifle_av_rpk74m_base", 145},
-					{"arifle_av_104",  90},
-					{"arifle_av_aksu",  40},
-					{"arifle_av_vss", 350},
-					{"srifle_av_svd",  250}
-					
+					{"arifle_av_bizon", 15},
+					{"arifle_av_aksu", 19},
+					{"arifle_av_ak74_1", 23},
+					{"arifle_av_ak74g", 30},
+					{"arifle_av_ak74m", 32},
+					{"arifle_av_ak74m_gp", 38},
+					{"arifle_av_aks74", 35}			
 				};
 			};		
 			
@@ -54,27 +46,13 @@
 				totalPrice = 1000;
 				items[] = {
 					
-					{"30Rnd_ak_545x39_mag", 5},
-					{"30Rnd_ak_545x39_T_mag", 5},
+					{"30Rnd_ak_545x39_T_mag", 4.372},
+					{"30Rnd_ak_545x39_mag", 5.699},
+					{"64Rnd_9x19_mag", 4.326},
 					
-					{"30Rnd_ak_762x39_mag", 10},
-					{"30Rnd_ak_762x39_T_mag", 10},
-					{"200Rnd_av_762x39_mag", 50},
-					{"10Rnd_av_9x39mm_val", 25},
-					{"20Rnd_av_9x39mm_SP5", 30},
-					{"20Rnd_av_9x39mm_SP6", 35},
+					{"8Rnd_Mag_pm", 0.55},
+					{"20Rnd_9x21_Mag", 0.82},
 					
-					{"20Rnd_av_9x39mm_val", 25},
-					
-					{"10Rnd_av_762x39_svd", 15},
-					{"45Rnd_ak_762x39_mag", 15},
-					
-					{"8Rnd_Mag_pm", 0.5},
-					{"20Rnd_9x21_Mag", 1.0},
-					
-					
-					
-					//HE_Grenade
 					{"1Rnd_HE_Grenade_shell", 5},
 					{"UGL_FlareWhite_F", 2},
 					{"UGL_FlareGreen_F", 2},
@@ -84,6 +62,7 @@
 					{"1Rnd_SmokeRed_Grenade_shell", 2},
 					{"1Rnd_SmokeGreen_Grenade_shell", 2},
 					{"1Rnd_SmokeYellow_Grenade_shell", 2}
+
 					
 					
 				};
@@ -95,7 +74,7 @@
 				items[] = {
 					
 					//Flashlight
-					{"acc_flashlight", 0.1}
+					{"acc_flashlight", 2.2}
 				};
 			};	
 			
@@ -105,12 +84,12 @@
 				items[] = {
 					
 					//Medicine
-					{"AGM_Bandage", 0.2}, 
-					{"ARMST_handwarmer", 0.5},
-					{"AGM_Morphine", 0.5},
-					{"armst_item_antirad", 2.5},
-					{"AGM_Bloodbag", 4},
-					{"AGM_Epipen", 2}
+					{"AGM_Bandage", 0.15}, 
+					//{"ARMST_handwarmer", 0.5},
+					{"AGM_Morphine", 3.5},
+					{"armst_item_antirad", 60.4},
+					{"AGM_Bloodbag", 43},
+					{"AGM_Epipen", 5}
 					
 				};
 			};
@@ -130,57 +109,55 @@
 
 					//Others
 					{"DAPSTALKERS_BOLTS", 0.1},
-					{"DETECTOR_RKS20", 3.5},
-					{"AGM_CableTie", 0.1},
-					{"armst_MESHOK", 0.1},
-					{"ARMST_potatobag", 12},
-					{"armst_taynik_big", 25},
+					{"DETECTOR_RKS20", 3.2},
+					{"AGM_CableTie", 0.095},
+					{"armst_MESHOK", 0.25},
+					//{"armst_taynik_big", 50},
 					
-					{"tf_anprc148jem", 2},
+					{"tf_anprc154", 4.3},
+					///{"tf_anprc148jem", 2},
 					{"armst_item_pda", 2.5},
-					{"ARMST_akkum", 6},
+					{"ARMST_akkum", 4},
 					//baricad
 					{"armst_bochka", 6},
-					{"armst_Razorwire", 15},
+					{"armst_Razorwire", 12},
 					{"armst_pallet_vertical", 2},
 					{"armst_armst_korob1", 7},
-					{"armst_BagFence", 4.5},
+					{"armst_BagFence", 3.5},
 					
-					{"HandGrenade", 4},
-					{"MiniGrenade", 4},
+					{"HandGrenade", 4.37},
+					{"MiniGrenade", 4.37},
 					
-					{"SmokeShell", 1.5}, 
-					{"SmokeShellYellow", 1.5},
-					{"SmokeShellGreen", 1.5},
-					{"SmokeShellRed", 1.5},
-					{"SmokeShellOrange", 1.5},
-					{"SmokeShellBlue", 1.5},
+					{"SmokeShell", 5.5}, 
+					{"SmokeShellYellow", 5.5},
+					{"SmokeShellGreen", 5.5},
+					{"SmokeShellRed", 5.5},
+					{"SmokeShellOrange", 5.5},
+					{"SmokeShellBlue", 5.5},
 					
-					{"APERSTripMine_Wire_Mag", 5},
 					
 					//Chemlight
-					{"Chemlight_red", 1.5},
-					{"Chemlight_green", 1.5},
-					{"Chemlight_blue", 1.5},
-					{"Chemlight_yellow", 1.5},
+					{"Chemlight_red", 0.095},
+					{"Chemlight_green", 0.095},
+					{"Chemlight_blue", 0.095},
+					{"Chemlight_yellow", 0.095},
 					
 					{"Rangefinder", 7},
 					{"Binocular", 2.5},
-					{"Photoapparat", 3.5},
-										
-					{"ItemCompass", 1},
+					{"Photoapparat", 4},	
+					{"ItemCompass", 1.3},
 					
 					{"armst_spicki", 0.05},
-					{"ARMST_zippo", 1},
+					{"ARMST_zippo", 1.7},
 					{"ARMST_lighter", 0.2},
-					{"ARMST_sleepingbag", 0.5},
-					{"ARMST_cigarettes", 0.2},
-					{"ToolKit", 0.4},
+					{"ARMST_sleepingbag", 0.9},
+					{"ARMST_cigarettes", 0.211},
+					{"ToolKit", 6},
 					
 					//Food
-					{"Armst_item_rathion", 2.5},
-					{"Armst_item_waterbottle", 0.6},
-					{"Armst_item_can",0.5}
+					{"Armst_item_rathion", 2.37},
+					{"Armst_item_waterbottle", 0.25},
+					{"Armst_item_can",0.9}
 					
 				};
 			};
@@ -194,12 +171,14 @@
 					{"armst_beret_un", 0.2},
 					{"Armst_cap_army", 0.25},
 					{"Beret_a", 0.3},
-					{"armst_M88PSM_un", 6},
-					{"armst_ACHHelmet_Un", 6.5},
-					{"ZSH_ZV", 8},
-					{"Altyn_ochki", 10},
-					{"Altyn_ZV", 10},
-					{"armst_Hood2_voen", 0.2},
+					{"SH_68_ch", 4},
+					{"SH_68", 4},
+					{"ZSH_1_zel", 4.65},
+					{"Skat", 6.3},
+					
+					{"Altyn_ochki", 8.4},
+					{"Altyn", 8},
+					{"armst_Hood2_voen", 0.25},
 					
 					//Gasmask
 					{"Armst_balaclava_voen", 0.2},
@@ -208,10 +187,9 @@
 					{"G_Bandanna_oli", 0.2},
 					
 					
-					{"armst_Gasslon", 10},
-					{"armst_GasP5", 15},
-					{"armst_GasP7", 20},
-					{"armst_Gasscout", 10}
+					{"armst_Gasslon", 5},
+					{"armst_GasP5", 11},
+					{"armst_GasP7", 17.6}
 					
 				};
 			};
@@ -222,13 +200,11 @@
 				items[] = {
 					
 					//VESTS
-					{"SP_JackEllis1_UNBlue1", 15},
-					{"Smersh_kora_SVD_ARMY", 12},
-					{"def_voen_easy", 10},
+					{"Smersh_kora_SVD_ARMY", 19},
+					{"def_voen_easy", 5},
 					{"def_voen_norm", 10},
-					{"def_voen_hard", 10},
-					{"Armst_sevavoen", 300},
-					{"Armst_ekzoarmy", 1000}
+					{"def_voen_hard", 15},
+					{"6B5_ARMY", 7.6}
 					
 				};
 			};
@@ -239,15 +215,13 @@
 				items[] = {
 					
 					{"ARMST_RUKZAK_GREEN1", 2},
-					{"B_Kitbag_rgr", 6},
-					{"tf_anprc155", 2},
+					{"B_Kitbag_rgr", 7},
 					
 					//DshkM
 					{"I_mas_Tripod_h_Bag", 5},
-					{"I_mas_DShkM_h_Gun_Bag", 5},
+					{"I_mas_DShkM_h_Gun_Bag", 15}
 					
 					//backpacks
-					{"B_TacticalPack_oli", 5}
 					
 				};
 			};
@@ -261,23 +235,8 @@
 					
 					//pistols
 					{"av_makarov", 4},
-					{"av_aps", 8}, 
-					
-					//5.45
-					{"arifle_av_ak74m", 55},
-					{"arifle_av_ak74m_gp", 60},
-					{"arifle_av_ak105s", 70}, 
-					{"arifle_av_103", 70},
-					{"arifle_av_103_gp", 70},
-					
-					
-					//Уникал
-					{"av_pk_base",  325},
-					{"arifle_av_rpk74m_base", 200},
-					{"arifle_av_104",  70},
-					{"arifle_av_aksu",  40},
-					{"arifle_av_vss", 200},
-					{"srifle_av_svd",  200}
+					{"av_aps", 8}
+
 				
 				};
 			};
@@ -287,21 +246,6 @@
 				displayName = $STR_TRADE_SECTION_AMMO;
 				items[] = {
 					
-					{"30Rnd_ak_545x39_mag", 2},
-					{"30Rnd_ak_545x39_T_mag", 2},
-					
-					{"30Rnd_ak_762x39_mag", 3},
-					{"30Rnd_ak_762x39_T_mag", 3},
-					{"200Rnd_av_762x39_mag", 4},
-					{"10Rnd_av_9x39mm_val", 1},
-					
-					{"20Rnd_av_9x39mm_val", 1.5},
-					
-					{"10Rnd_av_762x39_svd", 2},
-					{"45Rnd_ak_762x39_mag", 3},
-					
-					{"8Rnd_Mag_pm", 0.5},
-					{"20Rnd_9x21_Mag", 1.0},
 					
 					
 					
@@ -332,7 +276,7 @@
 
 					//Others
 					{"DAPSTALKERS_BOLTS", 0.1},
-					{"DETECTOR_RKS20", 3.5},
+					{"DETECTOR_RKS20", 1.5},
 					{"AGM_CableTie", 0.1},
 					{"armst_MESHOK", 0.1},
 					
@@ -416,95 +360,6 @@
 					{"armst_762", 0.08},
 					{"armst_steklo", 1.4},
 					
-					{"HandGrenade", 4},
-					{"MiniGrenade", 4},
-					
-					{"SmokeShell", 1.5}, 
-					{"SmokeShellYellow", 1.5},
-					{"SmokeShellGreen", 1.5},
-					{"SmokeShellRed", 1.5},
-					{"SmokeShellOrange", 1.5},
-					{"SmokeShellBlue", 1.5},
-					
-					{"APERSTripMine_Wire_Mag", 5},
-					
-					//Chemlight
-					{"Chemlight_red", 1.5},
-					{"Chemlight_green", 1.5},
-					{"Chemlight_blue", 1.5},
-					{"Chemlight_yellow", 1.5},
-					
-					
-					{"Binocular", 2.5},
-					{"Photoapparat", 3.5},
-										
-					{"ItemCompass", 1},
-					
-					{"armst_spicki", 0.05},
-					{"ToolKit", 0.4},
-					
-					//Food
-					{"Armst_item_rathion", 0.6},
-					{"Armst_item_waterbottle", 0.3},
-					
-					//EmptyBottle
-					{"armst_item_waterbottleempty",0.2},
-					{"armst_item_vodkaempty",0.3},
-					{"armst_item_Beerempty",0.2},
-					
-					//Flashlight
-					{"acc_flashlight", 0.1},
-					
-					//Aim
-					{"av_pkp", 8},
-					{"av_kobra", 10},
-					{"optic_av_pso", 20},
-					{"av_1p63", 16},
-					{"av_bipod", 0.2},
-					{"optic_av_1pn34", 100},
-
-					//Headgear
-					{"armst_Hood_voen", 0.2},
-					{"Armst_cap_army", 0.25},
-					{"Beret_a", 0.3},
-					{"ZSH_1_zel", 6},
-					{"ZSH_ochki", 6.5},
-					{"ZSH_ZV", 8},
-					{"Altyn_ochki", 10},
-					{"Altyn_ZV", 10},
-					
-					//Gasmask
-					{"Armst_balaclava_voen", 0.2},
-					{"H_Bandanna_khk_hs", 0.2},
-					{"H_Bandanna_khk", 0.2},
-					{"G_Bandanna_oli", 0.2},
-					
-					
-					{"armst_Gasslon", 10},
-					{"armst_GasP5", 15},
-					{"armst_GasP7", 20},
-					{"armst_Gasscout", 10},
-					
-					//VESTS
-					{"6B5_ARMY", 15},
-					{"Smersh_kora_SVD_ARMY", 12},
-					{"def_voen_easy", 10},
-					{"def_voen_norm", 10},
-					{"def_voen_hard", 10},
-					{"Armst_sevavoen", 350},
-					{"Armst_ekzoarmy", 700},
-					
-					{"ARMST_RUKZAK_GREEN1", 2},
-					{"B_Kitbag_rgr", 6},
-					{"tf_anprc155", 2},
-					
-					//DshkM
-					{"I_mas_Tripod_h_Bag", 5},
-					{"I_mas_DShkM_h_Gun_Bag", 5},
-					
-					//Minamet
-					{"I_mas_Tripod_Bag", 5},
-					{"I_mas_Podnos_Gun_Bag", 5},
 					
 					//backpacks
 					{"B_TacticalPack_oli", 5}

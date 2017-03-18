@@ -16,7 +16,6 @@
 	briefing = 0;
 	aiKills = 0;
 	disabledAI= 1;
-	onPauseScript = "scripts\block_esc.sqf";
 	allowFunctionsLog = 1;
 	allowFunctionsRecompile = 1;
 	enableTeamSwitch = 0;
@@ -28,6 +27,12 @@
 	MinScore = 0;
 	AvgScore = 1800;
 	MaxScore = 3000000;
+	ReviveMode = 1;
+	ReviveRequiredTrait = 0;
+	ReviveRequiredItems = 0;
+	reviveDelay = 60;
+	reviveForceRespawnDelay = 60;
+	reviveBleedOutDelay = 120;
 	MaxCustomFileSize = 838860800;
 	class ADMINS 
 	{
@@ -48,11 +53,10 @@
 	{
 		#include "cfgFunctions.hpp"
 	};
-	#include "scripts\pda\pda.hpp"
-	#include "scripts\craft\craft.hpp"
-	#include "scripts\keypad\keypad.hpp"
-	#include "scripts\notebook\notebook.hpp"
-	#include "scripts\detectors\detectors.hpp"
+	#include "\armst\armst_misc\armst_game\scripts\mission\pda\pda.hpp"
+	#include "\armst\armst_misc\armst_game\scripts\mission\craft\craft.hpp"
+	#include "\armst\armst_misc\armst_game\scripts\mission\keypad\keypad.hpp"
+	#include "\armst\armst_misc\armst_game\scripts\mission\notebook\notebook.hpp"
 	class CfgRemoteExec
 	{        
 	    class Functions
@@ -65,12 +69,22 @@
 	   class hint {allowedTargets=2; jip=0; }
 		};
 	};	
+	
+	class ARMST_RESPAWN 
+	{
+		custom[] = {
+			{760.87, 611.664, 0},
+			{2884.21, 1440.253, 0}
+		};
+	};
+	
 	class ARMST_Factions
 	{
 		class ARMST_STALKER 
 		{
-			baseMarker ="neutral_spawn";			
-			playableUnits[] = {					
+			baseMarker ="neutral_spawn";
+			respawn = 2;					//1 - На базе, 2 - В ближайшей точке (ARMST_RESPAWN  >> custom)
+			playableUnits[] = {		
 				"loner_private1",
 				"loner_private2",
 				"loner_private3",
@@ -85,6 +99,7 @@
 		class ARMST_SCIENCE 
 		{
 			baseMarker ="SCIENCE_base";
+			respawn = 1;	
 			playableUnits[] = {
 				"hazmat_2"
 			};
@@ -96,6 +111,7 @@
 		class ARMST_RENEGADE 
 		{
 			baseMarker ="respawn";
+			respawn = 1;	
 			captureLocations = false;
 			friendly[] = {};
 		};
@@ -103,6 +119,7 @@
 		class ARMST_FREEDOM
 		{
 			baseMarker ="freedom_base";
+			respawn = 1;	
 			playableUnits[] = {
 				"freedom_private",
 				"freedom_private2"
@@ -115,6 +132,7 @@
 		class ARMST_BANDITS
 		{
 			baseMarker ="bandit_base";
+			respawn = 1;	
 			playableUnits[] = {
 				"bandits_private",
 				"bandits_l",
@@ -133,6 +151,7 @@
 		class ARMST_DOLG 
 		{
 			baseMarker ="dolg_base";
+			respawn = 1;	
 			playableUnits[] = {
 				"Dolg_private",
 				"elite_dolg",
@@ -150,6 +169,7 @@
 		class ARMST_ARMY 
 		{
 			baseMarker ="army_base";
+			respawn = 1;	
 			playableUnits[] = {
 				"elite_voen",
 				"army_l",
@@ -166,6 +186,7 @@
 		class ARMST_MONOLITH 
 		{
 			baseMarker ="MONOLITH_respawn";
+			respawn = 1;	
 			playableUnits[] = {"monolith_private"};
 			captureLocations = true;
 			friendly[] = {};
@@ -175,6 +196,7 @@
 		class ARMST_MERCENARIES 
 		{
 			baseMarker ="mercenaries_base";
+			respawn = 1;	
 			playableUnits[] = {
 				"mercenaries_private",
 				"elite_merc",
@@ -206,7 +228,7 @@
 	
 	class ARMST_DefaultCharacter
 	{
-		money = 20000;				     	//Начальный капитал для нового игрока
+		money = 40000;				     	//Начальный капитал для нового игрока
 		faction = "ARMST_STALKER";			//Фракция для нового игрока
 		loadout[] = {						//Снаряжение нового игрока
 			//Uniform
@@ -355,16 +377,4 @@
 			{"ItemCompass"}
 		};
 	};
-class CfgSounds
-	{
-	sounds[] = {};	
-	class kashel  
-	{
-		name = "kashel";
-		sound[] = {
-				"functions\kashel.ogg",1.000000, 1.000000
-		};
-		titles[] = { };
-	};
-};
-//InfiSTAR moduls
+	onPauseScript = "\armst\armst_misc\armst_game\scripts\mission\block_esc.sqf";

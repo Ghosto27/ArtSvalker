@@ -27,16 +27,18 @@
 				items[] = {
 					
 					//pistols
-					{"av_makarov", 2},
-					{"av_aps", 3.5},
-					{"av_tt", 3.5},
+					{"av_revolver", 3.5},
+					{"av_tt", 5.3},
+					{"av_makarov", 6}, 
+					{"armst_Colt_1911_2", 8},
 					
-					
-					{"av_obrez_full", 7.5},
+					{"av_toz34", 19},
+					{"av_uzi", 19},
+					{"arifle_mp5", 7.5},
 					{"av_kedrpp", 25},
-					{"arifle_mp5", 30},
-					{"av_toz122", 45},
-					{"arifle_av_aksu_f", 50}
+					{"arifle_av_aksu_f", 50},
+					{"arifle_av_aksu", 50},
+					{"arifle_av_ak74old", 80}
 					
 				};
 			};	
@@ -46,13 +48,21 @@
 				totalPrice = 1000;
 				items[] = {
 					
-					{"30Rnd_ak_545x39_mag", 5},
-					{"8Rnd_Mag_pm", 0.5},
+					{"8Rnd_Mag_pm", 0.728},
+					{"8Rnd_Mag", 0.712},
+					{"9Rnd_45ACP_Mag", 0.758},
+					{"6Rnd_45ACP_Cylinder", 0.622},
 					{"20Rnd_9x21_Mag", 1},
-					{"av_4_M", 0.2},
-					{"av_12_M", 0.4},
-					{"8Rnd_Mag", 0.5},
-					{"30Rnd_9x21_Mag", 1}
+					{"30Rnd_9x21_Mag", 1.5},
+					{"av_12_p", 0.57},
+					{"av_4_p", 0.62},
+					{"av_Benelip_p", 0.67},
+					{"16Rnd_9x21_Mag", 0.87},
+					{"av_12_M", 0.58},
+					{"av_4_M", 0.64},
+					{"av_Beneli_M", 0.7},
+					{"30Rnd_ak_545x39_T_mag", 5.8},
+					{"30Rnd_ak_545x39_mag", 7}
 					
 				};
 			};		
@@ -63,7 +73,7 @@
 				items[] = {
 					
 					//Flashlight
-					{"acc_flashlight", 0.1}
+					{"acc_flashlight", 4}
 					
 				};
 			};	
@@ -74,11 +84,8 @@
 				items[] = {
 					
 					//Medicine
-					{"AGM_Bandage", 0.2}, 
-					{"ARMST_handwarmer", 0.5},
-					{"AGM_Morphine", 0.5},
-					{"AGM_Bloodbag", 4},
-					{"AGM_Epipen", 2}
+					{"AGM_Bandage", 0.35}, 
+					{"AGM_Morphine", 5.37},
 					
 				};
 			};
@@ -96,19 +103,19 @@
 					
 					//Others
 					{"DAPSTALKERS_BOLTS", 0.1},
-					{"DETECTOR_RKS20", 3.5},
-					{"AGM_CableTie", 0.1},
-					{"armst_MESHOK", 0.1},
-					{"Binocular", 2.5},
-					{"armst_taynik_big", 45},
+					{"DETECTOR_RKS20", 6},
+					{"AGM_CableTie", 0.075},
+					{"armst_MESHOK", 0.25},
+					{"Binocular", 3.25},
+					//{"armst_taynik_big", 45},
 					
 					{"armst_spicki", 0.05},
-					{"ARMST_zippo", 2},
-					{"ARMST_lighter", 0.2},
-					{"ARMST_sleepingbag", 0.5},
-					{"ARMST_cigarettes", 0.17},
-					{"armst_item_chigarette", 0.2},
-					{"tf_anprc148jem", 2},
+					{"ARMST_zippo", 2.7},
+					{"ARMST_lighter", 0.15},
+					{"ARMST_sleepingbag", 1.2},
+					{"ARMST_cigarettes", 0.115},
+					{"armst_item_chigarette", 0.15},
+					{"tf_pnr1000a", 6},
 					
 					//baricad
 					{"armst_bochka", 3},
@@ -120,23 +127,23 @@
 					
 					
 					
-					{"armst_item_pda", 3.5},
-					{"ItemCompass", 1},
+					{"armst_item_pda", 7},
+					{"ItemCompass", 2},
 					
 					
 					//Chemlight
-					{"Chemlight_red", 0.4},
-					{"Chemlight_green", 0.4},
-					{"Chemlight_blue", 0.4},
-					{"Chemlight_yellow", 0.4},
+					{"Chemlight_red", 0.113},
+					{"Chemlight_green", 0.113},
+					{"Chemlight_blue", 0.113},
+					{"Chemlight_yellow", 0.113},
 					
-					{"USSR_GUITAR", 4},
+					{"USSR_GUITAR", 7},
 					
 					//Food
-					{"Armst_item_bred",0.15},
-					{"Armst_item_kolbasa",0.35},
-					{"Armst_item_can",0.4},
-					{"Armst_item_waterbottle",0.6},
+					{"Armst_item_bred",0.215},
+					{"Armst_item_kolbasa",0.4},
+					{"Armst_item_can",0.98},
+					{"Armst_item_waterbottle",0.25},
 					{"armst_item_vodka",1}
 					
 				};
@@ -147,20 +154,34 @@
 				totalPrice = 1000;
 				items[] = {
 					
-					{"armst_Hood_od2", 0.2},
-					{"armst_Hood_Black", 0.2},
-					{"armst_Hood2_od2", 0.2},
-					{"armst_Hood2_Black", 0.2},
+					{"armst_Hood_od2", 0.4},
+					{"armst_Hood_Black", 0.4},
+					{"armst_Hood2_od2", 0.4},
+					{"armst_Hood2_Black", 0.4},
+					{"armst_Hood_band", 0.7},
+					{"armst_Hood_band_2", 0.7},
+					{"armst_Hood_band_3", 0.7},
 					{"H_Bandanna_gry", 0.2},
 					{"H_Cap_blk", 0.2},
+					{"armst_kepka_gop_3", 0.9},
+					{"armst_kepka_gop_2", 0.9},
+					{"armst_kepka_gop", 0.9},
+					{"armst_kepka_gop2_3", 0.9},
+					{"armst_kepka_gop2", 0.9},
+					{"armst_kepka_gop2_2 ", 0.9},
 
 					//Gasmask
-					{"G_Balaclava_blk", 0.25},
-					{"G_Bandanna_blk", 0.25},
+					{"G_Balaclava_blk", 0.47},
+					{"G_Bandanna_blk", 0.47},
+					{"armst_one_eye", 2},
+					{"armst_band_balaclava", 0.47},
+					{"armst_band_balaclava_2", 0.47},
+					{"armst_band_balaclava_3", 0.47},
 					{"armst_bandana", 0.25},
 					{"armst_bandanaGlass", 0.25},
 					{"G_Bandanna_beast", 0.2},
-					{"armst_respirator", 5}
+					{"armst_respirator", 5},
+					{"armst_Gasslon", 17.7}
 					
 				};
 			};
@@ -170,10 +191,22 @@
 				totalPrice = 1000;
 				items[] = {
 					
-					{"V_BandollierB_blk", 0.5},
 					{"p_ak", 0.5},
 					{"p2_ak", 0.75},
-					{"Kora_p2_ak", 3}
+					{"Kora_p2_ak", 3},
+					{"Armst_band_coat_mini", 5.7},
+					{"Armst_band_coat_mini2", 5.7},
+					{"Armst_band_coat_mini3", 5.7},
+					{"Armst_band_kurt", 6},
+					{"Armst_band_kurt_2", 6},
+					{"Armst_band_kurt_3", 6},
+					{"Armst_band_kurt2", 8.9},
+					{"Armst_band_kurt_3", 8.9},
+					{"Armst_band_kurt_3", 8.9},
+					{"Armst_band_coat2", 14},
+					{"Armst_band_coat2_2", 14},
+					{"Armst_band_coat2_3", 14}
+					
 					
 				};
 			};
@@ -183,8 +216,9 @@
 				totalPrice = 1000;
 				items[] = {
 					
-					{"ARMST_SUMKA", 2},
-					{"ARMST_RUKZAK_GRAY", 1}
+					{"ARMST_SUMKA", 6},
+					{"ARMST_RUKZAK_GRAY", 3.2},
+					{"ARMST_SUMKA7", 15}
 					
 				};
 			};
@@ -197,18 +231,18 @@
 				items[] = {
 					
 					//pistols
-					{"av_makarov", 4},
-					{"av_aps", 7},
-					{"av_tt", 7},
+					{"av_revolver", 3.5},
+					{"av_tt", 5.3},
+					{"av_makarov", 6}, 
+					{"armst_Colt_1911_2", 8},
 					
-					
-					{"arifle_av_akm", 60},
-				
-					{"av_toz122", 45},
-					{"arifle_av_aksu_f", 40},
-					{"av_kedrpp", 20},
-					{"av_obrez_full", 7},
-					{"av_obrez", 8}
+					{"av_toz34", 19},
+					{"av_uzi", 19},
+					{"arifle_mp5", 7.5},
+					{"av_kedrpp", 25},
+					{"arifle_av_aksu_f", 50},
+					{"arifle_av_aksu", 50},
+					{"arifle_av_ak74old", 80}
 					
 				};
 			};
@@ -218,14 +252,21 @@
 				displayName = $STR_TRADE_SECTION_AMMO;
 				items[] = {
 					
-					{"30Rnd_ak_545x39_mag", 2},
-					{"30Rnd_ak_762x39_mag", 3},
-					{"10Rnd_av_762x39_svd", 3},
-					{"8Rnd_Mag_pm", 0.5},
+					{"8Rnd_Mag_pm", 0.728},
+					{"8Rnd_Mag", 0.712},
+					{"9Rnd_45ACP_Mag", 0.758},
+					{"6Rnd_45ACP_Cylinder", 0.622},
 					{"20Rnd_9x21_Mag", 1},
-					{"av_obrez2rnd", 0.2},
-					{"8Rnd_Mag", 0.5},
-					{"30Rnd_9x21_Mag", 1}
+					{"30Rnd_9x21_Mag", 1.5},
+					{"av_12_p", 0.57},
+					{"av_4_p", 0.62},
+					{"av_Benelip_p", 0.67},
+					{"16Rnd_9x21_Mag", 0.87},
+					{"av_12_M", 0.58},
+					{"av_4_M", 0.64},
+					{"av_Beneli_M", 0.7},
+					{"30Rnd_ak_545x39_T_mag", 5.8},
+					{"30Rnd_ak_545x39_mag", 7}
 					
 				};
 			};
@@ -235,20 +276,16 @@
 				displayName = $STR_TRADE_SECTION_REMAINS;
 				items[] = {
 					
-					//Mut parts
-					{"Armst_mut_boar", 1.5},
-					{"Armst_mut_burer2", 4},
-					{"Armst_mut_controller", 7},
-					{"Armst_mut_krovosos", 5},
-					{"Armst_mut_chimera", 10},
-					{"Armst_mut_dog", 0.5},
-					{"Armst_mut_olen", 1.5},
-					{"Armst_mut_pauk", 1},
-					{"Armst_mut_plot", 1},
-					{"Armst_mut_psevdog", 1.5},
-					{"Armst_mut_poltergeist", 5},
-					{"Armst_mut_psevdogigant", 15},
-					{"Armst_mut_snork", 2}
+					{"Armst_mut_tushkano",0.4},
+					{"Armst_mut_dog",0.25},
+					{"Armst_mut_plot",0.1},
+					{"Armst_mut_boar",0.9},
+					{"Armst_mut_psevdog",1.5},
+					{"Armst_mut_burer2",3},
+					{"Armst_mut_controller",35},
+					{"Armst_mut_krovosos",19},
+					{"Armst_mut_olen",11},
+					{"Armst_mut_pauk",2}
 				};
 			};
 			
@@ -259,16 +296,10 @@
 					
 					//Artefacts
 					//anomylki
-					{"Item_TEARS_Unstab",1.6},
-					{"Item_Medusa_Unstab",2.2},
-					{"Item_GRAVI_Unstab",4.5},
-					{"Item_STONEBLOOD_Unstab",3},
-					
-					{"Item_SPIKES_Unstab",3},
-					{"Item_Slude_Unstab",4},
-					{"Item_EMPTY_Unstab",10},
-					{"Item_FIRE_Unstab",5},
-					{"Item_MEAT_Unstab",15},
+					{"Item_TEARS_Unstab",2.5},
+					{"Item_Medusa_Unstab",6.3},
+					{"Item_GRAVI_Unstab",8},
+					{"Item_STONEBLOOD_Unstab",12},
 					
 				};
 			};
@@ -286,20 +317,25 @@
 					
 					//Others
 					{"DAPSTALKERS_BOLTS", 0.1},
-					{"DETECTOR_RKS20", 3.5},
-					{"AGM_CableTie", 0.1},
-					{"armst_MESHOK", 0.1},
-					{"Binocular", 2.5},
+					{"DETECTOR_RKS20", 6},
+					{"AGM_CableTie", 0.075},
+					{"armst_MESHOK", 0.25},
+					{"Binocular", 3.25},
+
 					
 					{"armst_spicki", 0.05},
-					{"tf_anprc148jem", 2},
+					{"ARMST_zippo", 2.7},
+					{"ARMST_lighter", 0.15},
+					{"ARMST_sleepingbag", 1.2},
+					{"ARMST_cigarettes", 0.115},
+					{"armst_item_chigarette", 0.15},
+					{"tf_pnr1000a", 6},
 					//musor
 					{"ARMST_book_manual", 0.2},
 					{"ARMST_book_novel", 0.2},
 					{"ARMST_cards", 0.3},
 					{"ARMST_comic", 0.3},
 					{"ARMST_elec_powder", 0.4},
-					{"ARMST_lighter", 0.1},
 					{"ARMST_multitool", 0.4},
 					{"ARMST_newspaper", 0.2},
 					{"ARMST_picture_fam", 0.1},
@@ -371,29 +407,29 @@
 					{"armst_762", 0.08},
 					{"armst_steklo", 1.4},
 					
-					{"armst_item_pda", 3.5},
+					{"armst_item_pda", 2},
 					{"ItemCompass", 1},
 					
 					
 					//Chemlight
-					{"Chemlight_red", 0.4},
-					{"Chemlight_green", 0.4},
-					{"Chemlight_blue", 0.4},
-					{"Chemlight_yellow", 0.4},
+					{"Chemlight_red", 0.05},
+					{"Chemlight_green", 0.05},
+					{"Chemlight_blue", 0.05},
+					{"Chemlight_yellow", 0.05},
 					
-					{"USSR_GUITAR", 0.5},
+					{"USSR_GUITAR", 4},
 					
 					//Food
 					{"Armst_item_bred",0.15},
 					{"Armst_item_kolbasa",0.25},
 					{"Armst_item_can",0.4},
-					{"Armst_item_waterbottle",0.6},
+					{"Armst_item_waterbottle",0.1},
 					{"armst_item_vodka",1},
 					
 					//EmptyBottle
-					{"armst_item_waterbottleempty", 0.4},
-					{"armst_item_vodkaempty", 0.3},
-					{"armst_item_Beerempty", 0.2},
+					{"armst_item_waterbottleempty", 0.1},
+					{"armst_item_vodkaempty", 0.1},
+					{"armst_item_Beerempty", 0.1},
 					
 					//Medicine
 					{"AGM_Bandage", 0.2}, 

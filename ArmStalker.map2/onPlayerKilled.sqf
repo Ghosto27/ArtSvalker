@@ -35,6 +35,9 @@ switch (_condition) do {
     case "Dolg_private2": { 
    	 	_delmoney = 1.25;
 	};
+    case "Dolg_new_soldier": { 
+   	 	_delmoney = 1.25;
+	};
    case "freedom_private": { 
    	 	_delmoney = 1.25;
 	};
@@ -69,7 +72,7 @@ switch (_condition) do {
       _delmoney = 2;
   };
 };
-if (_money > 35000) then {
+if (_money > 50000) then {
 	_killed setVariable ["Money", round (_money / _delmoney), true];
 };
 
@@ -77,12 +80,28 @@ AGM_Goggles_PostProcessEyes ppEffectEnable false;
 AGM_Goggles_Effects = GLASSESDEFAULT;
 call AGM_Goggles_fnc_RemoveGlassesEffect;
 AGM_Goggles_EffectsActive=false;
-player setVariable ["AGM_EyesDamaged", false];
+_killed setVariable ["AGM_EyesDamaged", false];
 terminate AGM_Goggles_EyesDamageScript;
 terminate AGM_Goggles_MainLoop;
 terminate AGM_Goggles_DustHandler;
 AGM_Goggles_MainLoop = [] spawn AGM_Goggles_fnc_CheckGoggles;
 
+_ehUDMdiveLightKilledID = _killed getVariable "UDMdiveLightEHKilledID";
+_UDMshoulderLight = _killed getVariable "UDMshoulderLightName";
+_UDMgroundLight = _killed getVariable "UDMgroundLightName";
+deleteVehicle _UDMshoulderLight;
+deleteVehicle _UDMgroundLight;
+_flashlight = _killed getVariable "UDMnameOfFlashlight";
+deleteVehicle _flashlight;
+_killed setVariable ["UDMnameOfFlashlight",nil,false];
+_killed setVariable ["UDMshoulderLightName",nil,false];
+_killed setVariable ["UDMgroundLightName",nil,false];
+_killed setVariable ["UDMdiveLightEHKilledID",nil,false];
+_killed setVariable ["UDMflashlightPitch",nil,false];
+_killed setVariable ["UDMgroundLightPos",nil,false];
+_killed setVariable ["UDMflashlightYpos",nil,false];
+_killed setVariable ["UDMbrightness",nil,false];
+_killed removeEventHandler ["Killed",_ehUDMdiveLightKilledID];
 _killed setvariable ["ARMST_BODYTEMP",1];
 ARMST_BODYTEMP = 37.6;
 _killed removeweapon "ItemMap";

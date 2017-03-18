@@ -1,8 +1,13 @@
 WEST setFriend [CIVILIAN, 0];
+armst_first_spawn =
+{
+ARMST_SPAWN = [resp_1,resp_2,resp_3,resp_4,resp_5,resp_6,resp_7,resp_8,resp_9,resp_10,resp_11];
+_resp = ARMST_SPAWN select floor random count ARMST_SPAWN;
+player setPosATL [getPosATL _resp select 0, getPosATL _resp select 1, (getPosATL _resp select 2) + 0.3];
+};
 setViewDistance 800;
 setObjectViewDistance 800;
 enableSaving [false, false];
-
 if (isMultiplayer and !isDedicated) then {
 	
 	private _ADMINS = getArray (missionConfigfile >> "ADMINS" >> "uids");
@@ -34,7 +39,7 @@ if (!isServer) then {
 	[] execVM "scripts\pda\fn_pda.sqf";
 	[] execVM "scripts\notebook\fn_notebook.sqf";
 };
-[] execVM "scripts\real_weather.sqf";
+
 player addrating 100000;
 
 	player addEventHandler ["InventoryClosed", {
@@ -42,29 +47,8 @@ player addrating 100000;
 		  [_this select 1] spawn ARMST_update_Stash;
 		};
 	}];	
-
-[] spawn {
-MASSIVOBJECTSSSS=[4100,4100] nearObjects 6000;
-
-	while {true} do {
-	  	_arr2=(position player) nearObjects 1200;
-		{
-			if !(_x in _arr2) then {
-				if !(isPlayer _x) then {
-			  		_x hideObject true; 
-				};
-			}
-			else{
-				if !(isPlayer _x) then {
-				  	_x hideObject false; 
-				};
-				
-			};
-		}count MASSIVOBJECTSSSS;
-		sleep 5;
-	};	
-};
 sleep 5;
+mydamage_eh22 = player addEventHandler ["Fired", {[player] spawn player_fired}];
 player setVariable ["ARMST_artdetector",1];
 ARMY_TRADER switchmove "InBaseMoves_HandsBehindBack1";
 BANDITS_TRADER switchmove "Acts_AidlPercMstpSnonWnonDnon_warmup_4_loop";

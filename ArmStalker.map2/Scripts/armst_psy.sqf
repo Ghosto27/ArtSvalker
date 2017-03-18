@@ -1,3 +1,19 @@
+
+ARMST_PSY_DEATH2 =
+{
+private ["_unit","_zombie", "_z", "_newgroup", "_ZOMBIES", "_inventory"];
+_unit = _this select 0;
+_unit setDammage 1;
+};
+
+	/*
+	Autors: Aloe, Romzet
+	Description:
+	ПСИ-излучение
+		
+	Parameter(s):
+	ARMST_PSYDAMAGE переменная, отвечающая за уровень пси-здоровья игрока, при достижении 1 - смертельно.
+	*/
 ARMST_PSY_FX =
 {
 private "_counter";
@@ -22,7 +38,6 @@ private ["_vfxstate","_dmg","_pdmg","_ColorCorrections","_DynamicBlur","_FilmGra
 _epicenter = _this select 0;
 _range = _this select 1;
 _vfxstate=0;
-//_psyshlem = ["armst_psy_protector_exp","armst_psy_protector"];
 
 while {true} do 
 {
@@ -31,7 +46,7 @@ while {true} do
 	_psyshield = headgear player;
 	if (count _objects>0) then 
 	{
-		{if ((!alive _x) or (_x isKindOf "ARMST_ZOMBIE") or (_x isKindOf "ARMST_MUTANT_HUM") or (_x isKindOf "monolith_private") or (_psyshield == "armst_psy_protector") or (_psyshield == "armst_psy_protector_exp") )then {_objects=_objects-[_x];};}ForEach _objects;
+		{if ((!alive _x) or (_x isKindOf "ARMST_ZOMBIE") or (_psyshield == "armst_psy_protector_exp") )then {_objects=_objects-[_x];};}ForEach _objects;
 		{
 			if ((_x distance _epicenter)<_range) then
 			{
@@ -42,7 +57,7 @@ while {true} do
 						_dmg = (_x getVariable "ARMST_PSYDAMAGE");
 						if (isNil("_dmg")) then {_dmg = 0; _x setVariable ["ARMST_PSYDAMAGE",0];};
 				
-						_dmg = (_dmg + 0.005);
+						_dmg = (_dmg + 0.02);
 						_x setVariable ["ARMST_PSYDAMAGE",_dmg];
 	
 						if (_dmg>1) then {[_x] spawn ARMST_PSY_DEATH2;};
@@ -58,7 +73,7 @@ while {true} do
 								_dmg = (_x getVariable "ARMST_PSYDAMAGE");
 								if (isNil("_dmg")) then {_dmg = 0; _x setVariable ["ARMST_PSYDAMAGE",0];};
 				
-								_dmg = (_dmg + 0.005);
+								_dmg = (_dmg + 0.08);
 								_x setVariable ["ARMST_PSYDAMAGE",_dmg];
 	
 								if (_dmg>1) then {[_x] spawn ARMST_PSY_DEATH2};
@@ -73,7 +88,7 @@ while {true} do
 
 	_pos = (_epicenter modelToWorld [0,0,0]);
 	_dist=(player distance [_pos select 0, _pos select 1, _pos select 2]);
-	if ((_dist<=_range) and (!(player isKindOf "ARMST_ZOMBIE")) and (!(player isKindOf "ARMST_MUTANT_HUM")) and (!(player isKindOf "monolith_private"))) then 
+	if ((_dist<=_range) and (!(player isKindOf "ARMST_ZOMBIE")) ) then 
 	{
 		if (_vfxstate==0) then 
 		{
@@ -108,7 +123,7 @@ while {true} do
 		_pfx = player getVariable "ARMST_PSYEFFECT";
 		if (isNil("_pfx")) then {[] spawn ARMST_PSY_FX};
 	};
-	if ((_dist>_range) and (!(player isKindOf "ARMST_ZOMBIE")) and (!(player isKindOf "ARMST_MUTANT_HUM")) and (!(player isKindOf "monolith_private")) and (_vfxstate==1)) then 
+	if ((_dist>_range) and (!(player isKindOf "ARMST_ZOMBIE")) and (_vfxstate==1)) then 
 	{
 		ppEffectDestroy _DynamicBlur;
 		ppEffectDestroy _FilmGrain;
@@ -118,7 +133,7 @@ while {true} do
 		if (!(isNil("_pfx"))) then {player setVariable ["ARMST_PSYEFFECT",0];};
 		_vfxstate=0;
 	};
-	if ((player HasWeapon "armst_psy_protector") and (_vfxstate==1)) then 
+	if ((player HasWeapon "1") and (_vfxstate==1)) then 
 	{
 		ppEffectDestroy _DynamicBlur;
 		ppEffectDestroy _FilmGrain;

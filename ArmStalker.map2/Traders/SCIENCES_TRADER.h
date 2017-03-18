@@ -13,12 +13,10 @@ class SCIENCES_TRADER
 				totalPrice = 1000;
 				items[] = {
 					
-					{"arifle_av_aksu",  45},
-					{"arifle_av_aksu_f",  50},
-					{"arifle_av_sr2m",  60},
-					{"arifle_ak_sf",  120},
-					{"armst_MK18_F",  130},
-					{"av_makarov",  2}
+					{"av_makarov", 4},
+					{"av_kedrpp", 10},
+					{"arifle_av_bizon", 15},
+					{"arifle_av_aksu", 19}
 			     
 				};
 			};		
@@ -28,13 +26,12 @@ class SCIENCES_TRADER
 				totalPrice = 1000;
 				items[] = {
 					
-					{"8Rnd_Mag_pm", 0.3},
-					{"30Rnd_ak_545x39_mag", 5},
-					{"30Rnd_ak_545x39_T_mag", 5},
-					{"30Rnd_ak_762x39_mag", 10},
-					{"30Rnd_ak_762x39_T_mag", 10},
-					{"KA_30Rnd_556x45_M855", 8},
-					{"30Rnd_9x21_Mag", 3.0}
+					{"8Rnd_Mag_pm", 0.55},
+					{"16Rnd_9x21_Mag", 1.5},
+					{"30Rnd_9x21_Mag", 0.55},
+					{"30Rnd_ak_545x39_T_mag", 4.372},
+					{"30Rnd_ak_545x39_mag", 5.699},
+					{"64Rnd_9x19_mag", 4.326}
 
 					
 				};
@@ -45,10 +42,7 @@ class SCIENCES_TRADER
 				totalPrice = 1000;
 				items[] = {
 					
-					
-					{"acc_flashlight", 0.1},
-					{"av_e511_pl", 5},
-					{"av_e511", 5}
+					{"acc_flashlight", 2.2}
 				};
 			};		
 			
@@ -58,12 +52,12 @@ class SCIENCES_TRADER
 				items[] = {
 					
 					
-					{"AGM_Bandage", 0.01}, 
-					{"ARMST_handwarmer", 0.1},
-					{"AGM_Morphine", 0.05},
-					{"armst_item_antirad", 0.1},
-					{"AGM_Bloodbag", 0.1},
-					{"AGM_Epipen", 0.1}
+					{"AGM_Bandage", 0.15}, 
+					{"ARMST_handwarmer", 0.9},
+					{"AGM_Morphine", 3.5},
+					{"armst_item_antirad", 60.4},
+					{"AGM_Bloodbag", 43},
+					{"AGM_Epipen", 5}
 				};
 			};
 			
@@ -76,22 +70,22 @@ class SCIENCES_TRADER
 					{"armst_money5000R", 5},
 					{"armst_money10000R", 10},
 					{"armst_money50000R", 50},
-					
+					{"ARMST_propusk", 0.1},
 					{"DAPSTALKERS_BOLTS", 0.1},
-					{"DETECTOR_RKS20", 2},
-					{"AGM_CableTie", 0.1},
-					{"armst_MESHOK", 0.1},
+					{"DETECTOR_RKS20", 3.2},
+					{"AGM_CableTie", 0.095},
+					{"armst_MESHOK", 0.25},
 					{"armst_spicki", 0.05},
-					{"ARMST_zippo", 1},
+					{"ARMST_zippo", 2},
 					{"ARMST_lighter", 0.1},
-					{"ARMST_sleepingbag", 0.5},
+					{"ARMST_sleepingbag", 1},
 					{"ARMST_cigarettes", 0.2},
-					{"tf_anprc148jem", 2},
-					{"armst_item_pda", 3},
-					{"Photoapparat", 3.5},
-					{"ItemCompass", 1},
-					{"armst_arthelp", 10},
-					{"O_UavTerminal", 10},
+					///{"tf_anprc148jem", 2},
+					{"tf_anprc154", 4.3},
+					{"armst_item_pda", 2.5},
+					{"Binocular", 2.5},
+					{"Photoapparat", 4},	
+					{"ItemCompass", 1.3},
 					{"armst_NO1", 2},
 					{"armst_NO2", 6},
 					{"armst_NO3", 12},
@@ -104,31 +98,27 @@ class SCIENCES_TRADER
 					{"armst_Camping_Light", 0.8},
 					{"armst_PortableLight", 3},
 					{"armst_Camper", 5},
+					{"ARMST_instruments", 4},
 					
-					{"armst_item_detectors_otklick", 8},
-					{"armst_item_detectors_medved", 15},
-					{"armst_item_detectors_svarog", 50},
-					{"ARMST_batteries", 0.3},
+					{"armst_item_detectors_otklick", 6},
+					{"ARMST_batteries", 0.15},
 					
-					{"Chemlight_red", 0.4},
-					{"Chemlight_green", 0.4},
-					{"Chemlight_blue", 0.4},
-					{"Chemlight_yellow", 0.4},
+					{"Chemlight_red", 0.095},
+					{"Chemlight_green", 0.095},
+					{"Chemlight_blue", 0.095},
+					{"Chemlight_yellow", 0.095},
 				
-					{"SmokeShell", 2}, 
-					{"SmokeShellYellow", 2},
-					{"SmokeShellGreen", 2},
-					{"SmokeShellRed", 2},
-					{"SmokeShellOrange", 2},
-					{"SmokeShellBlue", 2},
-					{"ARMST_akkum", 6},
+                    {"SmokeShell", 5.5}, 
+					{"SmokeShellYellow", 5.5},
+					{"SmokeShellGreen", 5.5},
+					{"SmokeShellRed", 5.5},
+					{"SmokeShellOrange", 5.5},
+					{"SmokeShellBlue", 5.5},
 					
-					{"Armst_item_bred",0.25},
-					{"Armst_item_kolbasa",0.35},
-					{"Armst_item_can",0.5},
-					{"Armst_item_waterbottle",0.6},
-					{"Armst_item_rathion", 2.5},
-					{"Armst_item_shocolate", 0.1}
+					{"Armst_item_rathion", 2.37},
+					{"Armst_item_waterbottle", 0.25},
+					{"Armst_item_can",0.9},
+					{"Armst_item_shocolate", 0.15}
 					
 				};
 			};
@@ -143,25 +133,25 @@ class SCIENCES_TRADER
 					{"H_Bandanna_sand",  0.2},
 					{"G_Bandanna_oli",  0.2},
 
-					{"H_Cap_marshal", 5},
-					{"H_Cap_red", 2},
-					{"G_Lady_Blue", 0.25},
-					{"G_Spectacles", 0.25},
-					{"G_Spectacles_Tinted", 0.25},
-					{"armst_psy_protector_exp", 250},
-					{"armst_GasP5", 15},
-					{"armst_GasP7", 20},
-					{"armst_BioGasMaskG25", 30},
-					{"armst_G100", 35},
-					{"armst_seva_visor", 70},
-					{"armst_seva_science_shlem", 35},
-					{"armst_seva_shlem", 35},
-					{"armst_R5", 50},
-					{"armst_R5_SH2", 52},
-					{"armst_R5_P", 54},
-					{"armst_R5_filter", 60},
-					{"armst_R5_SH2_filter", 62},
-					{"armst_R5_P_filter", 67}
+					{"H_Cap_marshal", 2.3},
+					{"H_Cap_red", 2.25},
+					{"G_Lady_Blue", 0.4},
+					{"G_Spectacles", 0.4},
+					{"G_Spectacles_Tinted", 0.4},
+					//{"armst_psy_protector_exp", 250},
+					{"armst_Gasslon", 5},
+					{"armst_GasP5", 11},
+					{"armst_GasP7", 17.6},
+					{"armst_BioGasMaskG25", 30}
+					//{"armst_seva_visor", 70},
+					//{"armst_seva_science_shlem", 35},
+					//{"armst_seva_shlem", 35},
+					//{"armst_R5", 50},
+					//{"armst_R5_SH2", 52},
+					//{"armst_R5_P", 54},
+					//{"armst_R5_filter", 60},
+					//{"armst_R5_SH2_filter", 62},
+					//{"armst_R5_P_filter", 67}
 
 				};
 			};
@@ -170,7 +160,9 @@ class SCIENCES_TRADER
 				displayName = $STR_TRADE_SECTION_VESTS;
 				totalPrice = 1000;
 				items[] = {
-					{"Armst_science2", 50}
+					{"Kora", 1},
+					{"Kora_p_ak", 1.5},
+					{"Kora_p2_ak", 2}
 				};
 			};
 			
@@ -179,11 +171,10 @@ class SCIENCES_TRADER
 				totalPrice = 1000;
 				items[] = {
 					//BACKPACKS
-					{"B_Kitbag_sgg", 3},
-					{"armst_backpack_ballon", 150},
-					{"armst_seva_science_backpack", 150},
-					{"armst_seva_backpack", 200},
-					{"tf_anprc155", 3}
+					{"B_Kitbag_sgg", 3}
+					//{"armst_backpack_ballon", 150},
+					//{"armst_seva_science_backpack", 150},
+					//{"armst_seva_backpack", 200},
 					
 				};
 			};
@@ -196,10 +187,10 @@ class SCIENCES_TRADER
 				displayName = $STR_TRADE_SECTION_WEAPONS;
 				items[] = {
 
-					{"arifle_av_aksu",  40},
-					{"arifle_av_aksu_f",  40},
-					{"arifle_ak_sf",  60},
-					{"av_makarov",  4}
+					{"av_makarov", 4},
+					{"av_kedrpp", 10},
+					{"arifle_av_bizon", 15},
+					{"arifle_av_aksu", 19}
 		
 				};
 			};
@@ -209,12 +200,12 @@ class SCIENCES_TRADER
 				displayName = $STR_TRADE_SECTION_AMMO;
 				items[] = {
 					
-					{"8Rnd_Mag_pm", 1.0},
-					{"arifle_av_sr2m",  30},
-					{"30Rnd_ak_545x39_mag", 1.0},
-					{"30Rnd_ak_545x39_T_mag", 1.0},
-					{"30Rnd_ak_762x39_mag", 1.0},
-					{"30Rnd_ak_762x39_T_mag", 1.0}
+					{"8Rnd_Mag_pm", 0.55},
+					{"16Rnd_9x21_Mag", 1.5},
+					{"30Rnd_9x21_Mag", 0.55},
+					{"30Rnd_ak_545x39_T_mag", 4.372},
+					{"30Rnd_ak_545x39_mag", 5.699},
+					{"64Rnd_9x19_mag", 4.326}
 					
 				};
 			};
@@ -224,19 +215,22 @@ class SCIENCES_TRADER
 				displayName = $STR_TRADE_SECTION_REMAINS;
 				items[] = {
 					
-					//Mut parts
-					{"Armst_mut_burer2",15},
-					{"Armst_mut_controller",22},
-					{"Armst_mut_krovosos",15},
-					{"Armst_mut_chimera",22},
-					{"Armst_mut_olen",6},
-					{"Armst_mut_pauk",6},
-					{"Armst_mut_cat",5},
-					{"Armst_mut_izlom",20},
-					{"Armst_mut_tushkano",1.3},
-					{"Armst_mut_poltergeist",15},
-					{"Armst_mut_psevdogigant",130},
-					{"Armst_mut_snork",3}
+					{"Armst_mut_tushkano",2.25},
+					//{"Armst_mut_cat",6},
+					{"Armst_mut_dog",2},
+					{"Armst_mut_plot",3},
+					{"Armst_mut_boar",5},
+					{"Armst_mut_psevdog",7},
+					{"Armst_mut_burer2",20},
+					{"Armst_mut_controller",90},
+					{"Armst_mut_krovosos",40},
+					//{"Armst_mut_snork",17},
+					//{"Armst_mut_chimera",35},
+					//{"Armst_mut_izlom",16},
+					//{"Armst_mut_poltergeist",28},
+					//{"Armst_mut_psevdogigant",250},
+					{"Armst_mut_olen",25},
+					{"Armst_mut_pauk",40}
 				};
 			};
 			
@@ -247,21 +241,10 @@ class SCIENCES_TRADER
 					
 					//Artefacts
 					//anomylki
-					{"Item_TEARS_Unstab",1},
-					{"Item_Medusa_Unstab",2},
-					{"Item_GRAVI_Unstab",2.8},
-					{"Item_STONEBLOOD_Unstab",4},
-					
-					{"Item_SPIKES_Unstab",10},
-					{"Item_Slude_Unstab",25},
-					{"Item_EMPTY_Unstab",40},
-					{"Item_FIRE_Unstab",65},
-					{"Item_MEAT_Unstab",80},
-					
-					{"Item_ELECTRA_Unstab",170},
-					{"Item_BATTERY_Unstab",190},
-					{"Item_CRYSTALL_Unstab",310},
-					{"Item_SOUL_Unstab",640}
+					{"Item_TEARS_Unstab",5},
+					{"Item_Medusa_Unstab",8},
+					{"Item_GRAVI_Unstab",15},
+					{"Item_STONEBLOOD_Unstab",28},
 				};
 			};
 
@@ -282,7 +265,6 @@ class SCIENCES_TRADER
 					{"AGM_CableTie", 0.1},
 					{"armst_MESHOK", 0.1},
 					{"armst_spicki", 0.05},
-					{"tf_anprc148jem", 0.5},
 					{"armst_item_pda", 0.5},
 					{"ItemCompass", 1},
 					
@@ -338,7 +320,7 @@ class SCIENCES_TRADER
 					{"ARMST_akkum", 4},
 					{"ARMST_bumaga", 0.02},
 					{"ARMST_kanistra", 1.5},
-					{"ARMST_instruments", 2.4},
+					{"ARMST_instruments", 1},
 					{"ARMST_matplat", 2},
 					{"ARMST_gaz", 3.6},
 					{"armst_svecha", 1.3},
@@ -378,10 +360,10 @@ class SCIENCES_TRADER
 					{"armst_Camper", 10},
 					
 					//Chemlight
-					{"Chemlight_red", 0.4},
-					{"Chemlight_green", 0.4},
-					{"Chemlight_blue", 0.4},
-					{"Chemlight_yellow", 0.4},
+					{"Chemlight_red", 0.1},
+					{"Chemlight_green", 0.1},
+					{"Chemlight_blue", 0.1},
+					{"Chemlight_yellow", 0.1},
 					
 					//Smoke
 					{"SmokeShell", 2}, 
@@ -392,18 +374,13 @@ class SCIENCES_TRADER
 					{"SmokeShellBlue", 2},
 					
 					//Food
-					{"Armst_item_bred",0.25},
-					{"Armst_item_kolbasa",0.35},
-					{"Armst_item_can",0.4},
-					{"Armst_item_waterbottle",0.6},
-					{"Armst_item_rathion", 0.5},
-					{"Armst_item_shocolate", 0.1},
+					{"Armst_item_rathion", 2.37},
+					{"Armst_item_waterbottle", 0.25},
+					{"Armst_item_can",0.9},
+					{"Armst_item_shocolate", 0.15},
 					
 					
 					//EmptyBottle
-					{"armst_item_waterbottleempty",0.4},
-					{"armst_item_vodkaempty",0.3},
-					{"armst_item_Beerempty",0.2},
 					
 					//Flashlight
 					{"acc_flashlight", 0.1},
@@ -423,15 +400,8 @@ class SCIENCES_TRADER
 					//Gasmask
 					{"G_Lady_Blue", 0.25},
 					{"G_Spectacles", 0.25},
-					{"G_Spectacles_Tinted", 0.25},
-					{"armst_psy_protector_exp", 250},
-					{"armst_GasP5", 15},
-					{"armst_GasP7", 20},
-					{"armst_BioGasMaskG25", 30},
-					{"armst_G100", 35},
+					{"G_Spectacles_Tinted", 0.25}
 					
-					
-					{"tf_anprc155", 3}
 					
 				};
 				
@@ -441,7 +411,7 @@ class SCIENCES_TRADER
 				displayName = $STR_TRADE_SECTION_VESTS;
 				totalPrice = 1000;
 				items[] = {
-					{"Armst_science2", 30}
+					{"Armst_science2", 1}
 				};
 			};
 			
@@ -450,9 +420,7 @@ class SCIENCES_TRADER
 				totalPrice = 1000;
 				items[] = {
 					//BACKPACKS
-					{"armst_backpack_ballon", 120},
-					{"armst_seva_science_backpack", 120},
-					{"armst_seva_backpack", 170}
+					{"armst_seva_backpack", 1}
 					
 				};
 			};

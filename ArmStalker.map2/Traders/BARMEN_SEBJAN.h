@@ -26,139 +26,120 @@
 				totalPrice = 1000;
 				items[] = {
 					//pistols
-					{"crowbar", 2},
-					{"Axe2", 2},
-					{"av_makarov", 2},
-					{"av_tt", 4},
-					{"av_aps", 4}, 
-					{"armst_Colt_1911_2", 3},
+					{"av_revolver", 4.8},
+					{"av_tt", 6},
+					{"av_makarov", 6.9}, 
+					{"armst_Colt_1911_2", 8.2},
 					
-										
-					//rifles
-					{"arifle_av_aksu", 45}, 
-					{"arifle_av_aksu_f", 50},
-					{"av_Saiga12K", 20},
-					{"arifle_av_ak74_1", 85},
-					{"arifle_av_ak74s", 86},
-					{"arifle_av_akm", 120},
-					{"arifle_av_ak74m", 90},
-					{"arifle_av_ak74m_gp", 105},
-					{"arifle_av_aks74", 85}
+					{"av_obrez", 9},
+					{"av_toz34", 19},
+					{"mp135", 25},
+					{"av_mos", 18},
+					{"av_toz122", 31},
+					{"AV_M1014", 42},
+					{"arifle_av_aksu", 68},
+					{"arifle_av_aksu_f", 68},
+					{"arifle_av_ak74old", 77}
 					
 				};
-			};	
-		
+			};		
+			
 			class Magazines {
 				displayName = $STR_TRADE_SECTION_AMMO;
 				totalPrice = 1000;
 				items[] = {
 					
-					{"30Rnd_ak_545x39_mag", 5},
-					{"8Rnd_Mag_pm", 0.3},
-					{"8Rnd_Mag", 0.8},
-					{"20Rnd_9x21_Mag", 0.4},
-					{"9Rnd_45ACP_Mag", 0.5},
-					{"30Rnd_ak_545x39_T_mag", 5},
+					{"8Rnd_Mag_pm", 0.728},
+					{"8Rnd_Mag", 0.712},
+					{"9Rnd_45ACP_Mag", 0.758},
+					{"6Rnd_45ACP_Cylinder", 0.622},
 					
+					{"av_12_p", 0.37},
+					{"av_4_p", 0.42},
+					{"av_Benelip_p", 0.47},
 					
-					{"30Rnd_ak_762x39_T_mag",10},
-					{"10Rnd_av_762x39_svd", 15},
-					{"30Rnd_ak_762x39_mag", 10},
+					{"av_12_M", 0.38},
+					{"av_4_M", 0.44},
+					{"av_Beneli_M", 0.5},
+					{"av_5x_762", 0.537},
 					
-					{"av_Saiga12_M", 0.6}
-					
-					
+					{"10Rnd_T45_762x39_Tracer_Green", 0.78},
+					{"10Rnd_M43_762x39_Ball", 0.8},
+					{"10Rnd_BP_762x39_AP", 0.82},
+                    {"10Rnd_BZ_762x39_API", 0.85},
+                    
+					{"30Rnd_ak_545x39_T_mag", 5.2},
+					{"30Rnd_ak_545x39_mag", 6}
 				};
-			};			
-		
+			};
+			
 			class WeaponItems {
 				displayName = $STR_TRADE_SECTION_ACCESSORIES;
 				totalPrice = 1000;
 				items[] = {
 					//Flashlight
-					{"acc_flashlight", 0.1}
-				
-					
+					{"acc_flashlight", 1.3}
 					
 				};
-			};			
-		
-			class Items {
-				displayName = $STR_TRADE_SECTION_OTHERS;
-				totalPrice = 1000;
-				items[] = {
-					
-					//Items
-					{"DAPSTALKERS_BOLTS", 0.1},
-					{"DETECTOR_RKS20", 3.5},
-					{"AGM_CableTie", 0.1},
-					{"armst_MESHOK", 0.1},
-					{"Binocular", 2.5},
-					{"Photoapparat", 3.5},
-					{"ARMST_potatobag", 2},
-					{"armst_taynik_big", 120},
-					{"armst_spicki", 0.05},
-					{"ARMST_zippo", 3},
-					{"ARMST_lighter", 0.4},
-					{"ARMST_sleepingbag", 0.5},
-					{"ARMST_cigarettes", 0.18},
-					{"tf_anprc148jem", 4},
-					{"armst_arthelp", 70},
-					
-					{"armst_item_detectors_otklick", 19},
-					{"armst_item_detectors_medved", 50},
-					{"armst_item_detectors_svarog", 100},
-					{"ARMST_batteries", 0.9},
-					
-					
-					{"armst_item_pda", 4},
-					{"ItemCompass", 1},
-					
-					
-					//Chemlight
-					{"Chemlight_red", 0.4},
-					{"Chemlight_green", 0.4},
-					{"Chemlight_blue", 0.4},
-					{"Chemlight_yellow", 0.4},
-					
-					{"av_bandage_grey", 2},
-					{"av_bandage_orange", 2},
-					{"av_bandage_green", 2},
-					{"av_bandage_red", 2},
-					{"av_bandage_blue", 2},
-					{"av_bandage_white", 2},
-					{"USSR_GUITAR", 5},
-					{"ARMST_akkum", 6},
-					
-					//Money
-					{"armst_money100R", 1.0},
-					{"armst_money5000R", 5.0},
-					{"armst_money10000R", 10},
-					{"armst_money50000R", 50},
-
-					//Food
-					{"Armst_item_bred",0.25},
-					{"Armst_item_kolbasa",0.3},
-					{"Armst_item_can",0.4},
-					{"Armst_item_waterbottle",0.4},
-					{"armst_item_Beer",0.25},
-					{"armst_item_vodka",0.45}
-					
-				};
-			};
+			};	
 			
 			class Medicine {
 				displayName = $STR_TRADE_SECTION_MEDICINE;
 				totalPrice = 1000;
 				items[] = {
 					
-					//Medicine
-					{"AGM_Bandage", 0.25}, 
-					{"ARMST_handwarmer", 0.5},
-					{"AGM_Morphine", 0.5},
-					{"armst_item_antirad", 2},
-					{"AGM_Bloodbag", 3},
-					{"AGM_Epipen", 1.5}
+					{"AGM_Bandage", 0.41},
+					//{"ARMST_handwarmer", 1},	
+					{"AGM_Morphine", 4}
+					
+				};
+			};
+			
+			class Items {
+				displayName = $STR_TRADE_SECTION_OTHERS;
+				totalPrice = 1000;
+				items[] = {
+					//Others
+					{"DAPSTALKERS_BOLTS", 0.1},
+					{"DETECTOR_RKS20", 5.999},
+					{"ItemCompass", 2.5},
+					{"armst_item_pda", 7.3},
+					{"armst_spicki", 0.05},
+					{"ARMST_zippo", 2.5},
+					{"ARMST_lighter", 0.25},
+					{"ARMST_sleepingbag", 1.6},
+					{"ARMST_cigarettes", 0.14},
+					{"armst_item_chigarette", 0.16},
+					{"tf_pnr1000a", 8.4},
+					//tf_rf7800str
+					//tf_microdagr
+					//voen_tf_anprc154
+					{"armst_item_detectors_otklick", 15},
+					{"ARMST_batteries", 0.4},
+					
+					//Chemlight
+					{"Chemlight_red", 0.113},
+					{"Chemlight_green", 0.113},
+					{"Chemlight_blue", 0.113},
+					{"Chemlight_yellow", 0.113},
+					
+					//Money
+					{"armst_money100R", 1.0},
+					{"armst_money5000R", 5.0},
+					{"armst_money10000R", 10},
+					{"armst_money50000R", 50},
+					
+					//Food
+					{"Armst_item_bred", 0.258},
+					{"Armst_item_kolbasa", 2},
+					{"Armst_item_waterbottle", 0.357},
+					//{"Armst_item_can",1.2},
+					{"Armst_item_Sgushenka",1.7},
+					//{"Armst_item_tushonka",0.73},
+					//{"ARMST_gum",0.07},
+					//{"ARMST_skittles",0.223},
+					//{"Armst_item_snorkers",0.275},
+					{"armst_item_vodka",1.45}
 					
 				};
 			};
@@ -169,58 +150,46 @@
 				items[] = {
 					
 					//Капюшоны
-					{"armst_Hood_od5", 0.25},
-					{"armst_Hood_od1", 0.25},
-					{"armst_Hood_od3", 0.25},
-					{"armst_Hood_od4", 0.25},
-					{"armst_Hood_Tan", 0.25},
-					{"armst_Hood_od2", 0.25},
-					{"armst_Hood_Black", 0.25},
-					{"armst_Hood2_Green", 0.25},
-					{"armst_Hood2_od1", 0.25},
-					{"armst_Hood2_od4", 0.25},
-					{"armst_Hood2_od3", 0.25},
-					{"armst_Hood2_od5", 0.25},
-					{"armst_Hood2_Tan", 0.25},
-					
+					{"armst_Hood_od5", 0.499},
+					{"armst_Hood_od1", 0.499},
+					{"armst_Hood_od3", 0.499},
+					{"armst_Hood_od4", 0.499},
+					{"armst_Hood_Tan", 0.499},
+					{"armst_Hood2_Green", 0.499},
+					{"armst_Hood2_od1", 0.499},
+					{"armst_Hood2_od4", 0.499},
+					{"armst_Hood2_od3", 0.499},
+					{"armst_Hood2_od5", 0.499},
+					{"armst_Hood2_Tan", 0.499},
 					//Bandanna
-					{"H_Bandanna_cbr",  0.25},
-					{"H_Bandanna_sand", 0.25},
-					{"H_Bandanna_camo", 0.25},
-					{"H_Bandanna_surfer_grn", 0.25},
-					{"H_Bandanna_khk", 0.25},
-					{"H_Bandanna_gry", 0.25},
-					{"H_Cap_grn", 0.25},
-					{"H_Cap_tan", 0.25},
-					{"H_Cap_oli", 0.25},
-					{"H_Cap_blk", 0.25},
+					{"H_Bandanna_sand", 0.3},
+					{"H_Bandanna_sgg", 0.3},
+					{"H_Bandanna_khk", 0.3},
+					{"H_Bandanna_cbr", 0.3},
+					{"H_Bandanna_gry", 0.3},
+					//панамки и шапки
+					{"H_Booniehat_khk", 0.72},
+					{"H_Booniehat_oli", 0.72},
+					{"armst_cap_band", 0.35},
+					{"armst_cap_dolg", 0.35},
+					{"armst_cap_free3", 0.35},
+					{"armst_cap_free4", 0.35},
+					{"armst_cap_free", 0.35},
+					{"armst_cap_army", 0.35},
+					{"armst_cap_free2", 0.35},
+					{"armst_cap_merc", 0.35},
 					
-					//Helmets
-					{"SH_68", 4},
-					{"kaska_nem", 3},
-					{"ZSH_1_kam", 5},
-					{"Maska1_ZN", 7},
-					{"SH_60", 4},
-					{"Altyn_ch_ber", 15},
-					{"sfera", 17.5},
-					{"Vulkan_ZV", 14},
-					{"Altyn_ch_ch", 16},
-					{"Vulkan", 20},
 					
 					//Gasmask
-					{"G_Bandanna_tan", 0.2},
-					{"G_Bandanna_oli", 0.2},
-					{"G_Bandanna_khk", 0.2},
-					{"G_Bandanna_blk", 0.2},
-					
-					{"armst_respirator", 1},
-					{"armst_Gasslon", 10},
-					{"armst_GasP5", 15},
-					{"armst_GasP7", 20},
-					{"armst_Gasscout", 15},
-					{"armst_R5", 60},
-					{"armst_R5_SH2", 63},
-					{"armst_R5_P", 69}
+					{"G_Bandanna_khk", 0.6},
+					{"G_Bandanna_oli", 0.6},
+					{"G_Bandanna_blk", 0.6},
+					{"G_Bandanna_tan", 0.6},
+					{"G_Lowprofile", 1.36},
+					{"armst_one_eye", 2},
+					{"G_Balaclava_blk", 0.9},
+					{"G_Balaclava_oli", 0.9},
+					{"armst_gasmaskBastard", 11.35}
 					
 				};
 			};
@@ -230,15 +199,14 @@
 				totalPrice = 1000;
 				items[] = {
 					
-					{"Kora", 1.5},
-					{"Kora_p_ak", 2},
-					{"Smersh_SVD", 8},
-					{"Rys_m", 17},
-					{"Rys_m_kora", 19},
-					{"Rys_m_GP", 15},
-					{"Smersh_AK", 10}
-					
-					
+					{"p_ak", 0.5},
+					{"p2_ak", 1},
+					{"Kora", 3},
+					{"Kora_p_ak", 3.5},
+					{"Kora_p2_ak", 4},
+					{"Smersh_AK", 6.4},
+					{"6B3", 18},
+					{"6B5", 10.15}
 				};
 			};
 			
@@ -246,22 +214,19 @@
 				displayName = $STR_TRADE_SECTION_BACKPACKS;
 				totalPrice = 1000;
 				items[] = {
-					{"ARMST_RUKZAK_GREEN1", 1},
-					{"ARMST_RUKZAK_GREEN", 1},
-					{"ARMST_RUKZAK_BLUE1", 1},
-					{"ARMST_RUKZAK_BLACKBLUE", 1},
-					{"ARMST_RUKZAK_GRAY", 1},
-					{"ARMST_RUKZAK_BLACK2", 1},
-					{"ARMST_RUKZAK_GREENCAMO", 1},
-					{"ARMST_RUKZAK_BLACK", 1},
-					{"ARMST_SUMKA1", 5},
-					{"armst_backpack_ballon", 180}
-				
+					
+					{"ARMST_SUMKA1", 2.3},
+					{"ARMST_RUKZAK", 5.5},
+					{"ARMST_RUKZAK_BLACK", 5.5},
+					{"ARMST_RUKZAK_GREEN1", 5.5},
+					{"ARMST_RUKZAK_GREENCAMO", 5.5},
+					{"ARMST_RUKZAK_GRAY", 5.5},
+					{"ARMST_SUMKA", 8.5},
+					{"ARMST_SUMKA8", 10.13},
+					{"ARMST_SUMKA4", 17}
 					
 				};
 			};
-		
-
 		};
 		
 		class Buy 
@@ -271,24 +236,24 @@
 				displayName = $STR_TRADE_SECTION_WEAPONS;
 				items[] = {
 					
-				//pistols
-					{"av_makarov", 4},
-					{"av_tt", 8},
-					{"av_aps", 8}, 
+						//pistols
+					{"av_revolver", 4.8},
+					{"av_tt", 6},
+					{"av_makarov", 6.9}, 
+					{"armst_Colt_1911_2", 8.2},
 					
-										
-					//rifles
-					{"arifle_av_aksu", 40}, 
-					{"arifle_av_aksu_f", 40},
-					{"av_Saiga12K", 25},
-					{"arifle_av_ak74_1", 50},
-					{"arifle_av_ak74s", 50},
-					{"arifle_KA_SKS_F", 29.4}, 
-					{"arifle_av_akm", 60},
-					{"arifle_av_aksu", 40},
-					{"arifle_av_ak74m", 55},
-					{"arifle_av_ak74m_gp", 60},
-					{"arifle_av_aks74", 50}
+					{"av_obrez", 9},
+					{"av_toz34", 19},
+					{"mp135", 25},
+					{"armst_Remington870", 33},
+					{"av_mos", 18},
+					{"av_toz122", 31},
+					{"arifle_KA_SKS_F", 17.3},
+					{"AV_M1014", 42},
+					{"arifle_av_aksu", 68},
+					{"arifle_av_aksu_f", 68},
+					{"arifle_av_ak74old", 77}
+					
 				};
 			};
 			
@@ -297,18 +262,27 @@
 				displayName = $STR_TRADE_SECTION_AMMO;
 				items[] = {
 					
-					{"30Rnd_ak_545x39_mag", 1.5},
-					{"8Rnd_Mag_pm", 0.3},
-					{"20Rnd_9x21_Mag", 0.4},
+					{"8Rnd_Mag_pm", 0.728},
+					{"8Rnd_Mag", 0.712},
+					{"9Rnd_45ACP_Mag", 0.758},
+					{"6Rnd_45ACP_Cylinder", 0.622},
 					
-					{"30Rnd_ak_545x39_T_mag", 2},
+					{"av_12_p", 0.37},
+					{"av_4_p", 0.42},
+					{"av_Benelip_p", 0.47},
 					
+					{"av_12_M", 0.38},
+					{"av_4_M", 0.44},
+					{"av_Beneli_M", 0.5},
+					{"av_5x_762", 0.537},
 					
-					
-					{"10Rnd_av_762x39_svd", 2},
-					{"30Rnd_ak_762x39_mag", 3},
-					
-					{"av_Saiga12_M", 0.6}
+					{"10Rnd_T45_762x39_Tracer_Green", 0.78},
+					{"10Rnd_M43_762x39_Ball", 0.8},
+					{"10Rnd_BP_762x39_AP", 0.82},
+                    {"10Rnd_BZ_762x39_API", 0.85},
+                    
+					{"30Rnd_ak_545x39_T_mag", 5.2},
+					{"30Rnd_ak_545x39_mag", 6}
 					
 				};
 			};
@@ -319,39 +293,48 @@
 				items[] = {
 					
 					//Mut parts
-					{"Armst_mut_boar",1},
-					{"Armst_mut_burer2",7},
-					{"Armst_mut_controller",10},
-					{"Armst_mut_krovosos",6},
-					{"Armst_mut_chimera",30},
-					{"Armst_mut_dog",1},
-					{"Armst_mut_olen",2},
-					{"Armst_mut_cat",4},
-					{"Armst_mut_izlom",11},
-					{"Armst_mut_tushkano",0.6},
-					{"Armst_mut_pauk",1},
-					{"Armst_mut_plot",1},
-					{"Armst_mut_psevdog",1.5},
-					{"Armst_mut_poltergeist",7},
-					{"Armst_mut_snork",3}
+					{"Armst_mut_tushkano",0.34},
+					//{"Armst_mut_cat",6},
+					{"Armst_mut_dog",0.75},
+					{"Armst_mut_plot",0.98},
+					{"Armst_mut_boar",2.5},
+					{"Armst_mut_psevdog",3},
+					{"Armst_mut_burer2",5},
+					{"Armst_mut_controller",45},
+					{"Armst_mut_krovosos",27},
+					//{"Armst_mut_snork",17},
+					//{"Armst_mut_chimera",35},
+					//{"Armst_mut_izlom",16},
+					
+					//{"Armst_mut_poltergeist",28},
+					//{"Armst_mut_psevdogigant",250},
+					{"Armst_mut_olen",15},
+					{"Armst_mut_pauk",10}
 				};
 			};
 			
 			class Artefacts {
-				totalConsume = 1000;
+				totalConsume = 500;
 				displayName = $STR_TRADE_SECTION_ARTEFACTS;
 				items[] = {
 					
 					//Artefacts
 					//anomylki
-					{"Item_TEARS_Unstab",1},
-					{"Item_Medusa_Unstab",1.6},
-					{"Item_GRAVI_Unstab",3},
-					{"Item_STONEBLOOD_Unstab",6},
+					{"Item_TEARS_Unstab",2.5},
+					{"Item_Medusa_Unstab",6.3},
+					{"Item_GRAVI_Unstab",8},
+					{"Item_STONEBLOOD_Unstab",14},
 					
-					{"Item_SPIKES_Unstab",8},
-					{"Item_EMPTY_Unstab",15},
-					{"Item_MEAT_Unstab",40}
+					//{"Item_SPIKES_Unstab",10},
+					//{"Item_Slude_Unstab",25},
+					//{"Item_EMPTY_Unstab",40},
+					//{"Item_FIRE_Unstab",65},
+					//{"Item_MEAT_Unstab",80},
+					
+					//{"Item_ELECTRA_Unstab",170},
+					//{"Item_BATTERY_Unstab",190},
+					//{"Item_CRYSTALL_Unstab",310},
+					//{"Item_SOUL_Unstab",640}
 					
 				};
 			};
@@ -360,34 +343,32 @@
 				totalConsume = 500;
 				displayName = $STR_TRADE_SECTION_OTHERS;
 				items[] = {
-					
 					//Money
 					{"armst_money100R", 2},
 					{"armst_money5000R", 10},
 					{"armst_money10000R", 20},
 					{"armst_money50000R", 100},
 					
-					//Items
+					//Others
 					{"DAPSTALKERS_BOLTS", 0.1},
-					{"DETECTOR_RKS20", 3.5},
-					{"AGM_CableTie", 0.1},
-					{"armst_MESHOK", 0.1},
-					{"Binocular", 2.5},
-					{"Photoapparat", 3.5},
-					{"ARMST_zippo", 0.5},
-					{"ARMST_sleepingbag", 0.5},
-					{"ARMST_cigarettes", 0.5},
-					
+					{"DETECTOR_RKS20", 5.3},
+					{"ItemCompass", 2.2},
+					{"armst_item_pda", 7},
 					{"armst_spicki", 0.05},
-					{"tf_anprc148jem", 0.5},
-					
+					{"ARMST_zippo", 2.5},
+					{"ARMST_lighter", 0.25},
+					{"ARMST_sleepingbag", 1.6},
+					{"ARMST_cigarettes", 0.14},
+					{"armst_item_chigarette", 0.16},
+					{"tf_pnr1000a", 4},
+					{"armst_item_detectors_otklick", 10},
+					{"ARMST_batteries", 0.1},
 					//musor
 					{"ARMST_book_manual", 0.2},
 					{"ARMST_book_novel", 0.2},
 					{"ARMST_cards", 0.3},
 					{"ARMST_comic", 0.3},
 					{"ARMST_elec_powder", 0.4},
-					{"ARMST_lighter", 0.1},
 					{"ARMST_multitool", 0.4},
 					{"ARMST_newspaper", 0.2},
 					{"ARMST_picture_fam", 0.1},
@@ -400,7 +381,6 @@
 					{"ARMST_vhstape", 0.2},
 					{"ARMST_550cord", 0.4},
 					{"ARMST_acetone", 0.38},
-					{"ARMST_batteries", 0.27},
 					{"ARMST_bungeecord", 0.82},
 					{"ARMST_canopener", 0.4},
 					{"ARMST_detcord", 1.4},
@@ -432,7 +412,7 @@
 					{"ARMST_wirecutter", 0.4},
 					{"ARMST_akkum", 4},
 					{"ARMST_bumaga", 0.02},
-					{"ARMST_kanistra", 1.5},
+					{"ARMST_kanistra", 17.04},
 					{"ARMST_instruments", 2.4},
 					{"ARMST_matplat", 2},
 					{"ARMST_gaz", 3.6},
@@ -443,13 +423,12 @@
 					{"armst_kevlar", 3.48},
 					{"armst_lopatka", 1},
 					{"armst_skipidar", 0.6},
-					{"armst_broneplastina", 4},
 					{"armst_brokenradio", 0.2},
 					{"armst_brokenpda", 1.2},
 					{"armst_zeton", 0.4},
 					{"armst_polhir", 3.6},
 					{"armst_medinst", 3},
-					{"armst_arthelp", 4},
+					{"armst_arthelp", 6},
 					{"armst_medperchatki", 0.4},
 					{"armst_scaner", 5},
 					{"armst_scanerart", 4.6},
@@ -459,117 +438,124 @@
 					{"armst_762", 0.08},
 					{"armst_steklo", 1.4},
 					
-					{"armst_item_pda", 3.5},
-					{"ItemCompass", 1},
-					
-					
 					//Chemlight
-					{"Chemlight_red", 0.4},
-					{"Chemlight_green", 0.4},
-					{"Chemlight_blue", 0.4},
-					{"Chemlight_yellow", 0.4},
-					
-					{"USSR_GUITAR", 0.5},
+					{"Chemlight_red", 0.113},
+					{"Chemlight_green", 0.113},
+					{"Chemlight_blue", 0.113},
+					{"Chemlight_yellow", 0.113},
 					
 					//Money
 					{"armst_money100R", 1.0},
 					{"armst_money5000R", 5.0},
 					{"armst_money10000R", 10},
 					{"armst_money50000R", 50},
-
+					
 					//Food
-					{"Armst_item_bred",0.25},
-					{"Armst_item_kolbasa",0.3},
-					{"Armst_item_can",0.4},
-					{"Armst_item_waterbottle",0.4},
-					{"armst_item_Beer",0.25},
-					{"armst_item_vodka",0.45},
-
-										
+					{"Armst_item_bred", 0.217},
+					{"Armst_item_kolbasa", 0.9},
+					{"Armst_item_waterbottle", 0.325},
+					{"Armst_item_Sgushenka",1.3},
+					{"armst_item_vodka",1.73},
+					
 					//EmptyBottle
-					{"armst_item_waterbottleempty",0.4},
-					{"armst_item_vodkaempty",0.3},
-					{"armst_item_Beerempty",0.2},
-					
+					{"armst_item_waterbottleempty", 0.1},
+					{"armst_item_vodkaempty", 0.1},
+					{"armst_item_Beerempty", 0.1}
+				};
+			};
+
+            class Medicine {
+				totalConsume = 500;
+				displayName = $STR_TRADE_SECTION_MEDICINE;
+				items[] = {				
 					//Medicine
-					{"AGM_Bandage", 0.25}, 
-					{"AGM_Morphine", 0.5},
-					{"armst_item_antirad", 2},
-					{"AGM_Bloodbag", 3},
-					{"AGM_Epipen", 1.5},
-					
-				  //Headgear
+					{"AGM_Bandage", 0.41},			
+					{"AGM_Morphine", 1}
+				};
+            };		
+
+			class Headgear {
+				totalConsume = 500;
+				displayName = $STR_TRADE_SECTION_HELMETS;
+				items[] = {		
 					//Капюшоны
-					{"armst_Hood_od5", 0.25},
-					{"armst_Hood_od1", 0.25},
-					{"armst_Hood_od3", 0.25},
-					{"armst_Hood_od4", 0.25},
-					{"armst_Hood_Tan", 0.25},
-					{"armst_Hood_od2", 0.25},
-					{"armst_Hood_Black", 0.25},
-					
+					{"armst_Hood_od5", 0.499},
+					{"armst_Hood_od1", 0.499},
+					{"armst_Hood_od3", 0.499},
+					{"armst_Hood_od4", 0.499},
+					{"armst_Hood_Tan", 0.499},
+					{"armst_Hood2_Green", 0.499},
+					{"armst_Hood2_od1", 0.499},
+					{"armst_Hood2_od4", 0.499},
+					{"armst_Hood2_od3", 0.499},
+					{"armst_Hood2_od5", 0.499},
+					{"armst_Hood2_Tan", 0.499},
 					//Bandanna
-					{"H_Bandanna_cbr",  0.25},
-					{"H_Bandanna_sand", 0.25},
-					{"H_Bandanna_camo", 0.25},
-					{"H_Bandanna_surfer_grn", 0.25},
-					{"H_Bandanna_khk", 0.25},
-					{"H_Bandanna_gry", 0.25},
-					{"H_Cap_grn", 0.25},
-					{"H_Cap_tan", 0.25},
-					{"H_Cap_oli", 0.25},
-					{"H_Cap_blk", 0.25},
+					{"H_Bandanna_sand", 0.3},
+					{"H_Bandanna_sgg", 0.3},
+					{"H_Bandanna_khk", 0.3},
+					{"H_Bandanna_cbr", 0.3},
+					{"H_Bandanna_gry", 0.3},
+					//панамки и шапки
+					{"H_Booniehat_khk", 0.72},
+					{"H_Booniehat_oli", 0.72},
+					{"armst_cap_band", 0.35},
+					{"armst_cap_dolg", 0.35},
+					{"armst_cap_free3", 0.35},
+					{"armst_cap_free4", 0.35},
+					{"armst_cap_free", 0.35},
+					{"armst_cap_army", 0.35},
+					{"armst_cap_free2", 0.35},
+					{"armst_cap_merc", 0.35},
 					
-					//Helmets
-					{"SH_68", 4},
-					{"kaska_nem", 3},
-					{"ZSH_1_kam", 5},
-					{"Maska1_ZN", 7},
-					{"SH_60", 4},
-					{"Altyn_ch_ber", 15},
-					{"sfera", 12},
-					{"Vulkan_ZV", 10.0},
-					{"Altyn_ch_ch", 6},
-					{"Vulkan", 10},
 					
 					//Gasmask
-					{"G_Bandanna_tan", 0.2},
-					{"G_Bandanna_oli", 0.2},
-					{"G_Bandanna_khk", 0.2},
-					{"G_Bandanna_blk", 0.2},
+					{"G_Bandanna_khk", 0.6},
+					{"G_Bandanna_oli", 0.6},
+					{"G_Bandanna_blk", 0.6},
+					{"G_Bandanna_tan", 0.6},
+					{"G_Lowprofile", 1.36},
+					{"armst_one_eye", 2},
+					{"G_Balaclava_blk", 0.9},
+					{"G_Balaclava_oli", 0.9},
+					{"armst_respirator", 7},
+					{"armst_gasmaskBastard", 11.35},
+					{"armst_Gasslon", 17.7}
+				};
+			};
 					
-					{"armst_respirator", 1},
-					{"armst_Gasslon", 10},
-					{"armst_GasP5", 15},
-					{"armst_GasP7", 20},
-					{"armst_Gasscout", 15},
-					
-					//Flashlight
-					{"acc_flashlight", 0.005},
-					
-										
+            class VESTS {
+				totalConsume = 500;
+				displayName = $STR_TRADE_SECTION_VESTS;
+				items[] = {	
 					//Vests
-					{"Kora", 1.5},
-					{"Kora_p_ak", 2},
-					{"Smersh_SVD", 8},
-					{"Rys_m", 17},
-					{"Rys_m_kora", 19},
-					{"Rys_m_GP", 10},
-					{"Smersh_AK", 10},
-					
+					{"p_ak", 0.5},
+					{"p2_ak", 1},
+					{"Kora", 3},
+					{"Kora_p_ak", 3.5},
+					{"Kora_p2_ak", 4},
+					{"Smersh_AK", 7},
+					{"6B3", 12.999},
+					{"6B5", 11.35}
+				};
+			};
+			
+			class BACKPACKS {
+				totalConsume = 500;
+				displayName = $STR_TRADE_SECTION_BACKPACKS;
+				items[] = {	
 					//Backpacks
-					{"ARMST_RUKZAK_GREEN1", 1},
-					{"ARMST_RUKZAK_GREEN", 1},
-					{"ARMST_RUKZAK_BLUE1", 1},
-					{"ARMST_RUKZAK_BLACKBLUE", 1},
-					{"ARMST_RUKZAK_GRAY", 1},
-					{"ARMST_RUKZAK_BLACK2", 1},
-					{"ARMST_RUKZAK_GREENCAMO", 1},
-					{"ARMST_RUKZAK_BLACK", 1},
-					{"ARMST_SUMKA1", 5}
+					{"ARMST_SUMKA1", 1},
+					{"ARMST_RUKZAK", 4.5},
+					{"ARMST_RUKZAK_BLACK", 4.5},
+					{"ARMST_RUKZAK_GREEN1", 4.5},
+					{"ARMST_RUKZAK_GREENCAMO", 4.5},
+					{"ARMST_RUKZAK_GRAY", 4.5},
+					{"ARMST_SUMKA", 6.31},
+					{"ARMST_SUMKA8", 8.52},
+					{"ARMST_SUMKA4", 14}
 					
 				};
 			};
 		};
-	
 	};

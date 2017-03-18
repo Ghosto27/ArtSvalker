@@ -25,6 +25,6 @@ _ARMST_ANIM = ARMST_ANIM select floor random count ARMST_ANIM;
 _unit setPos (getPos _chair); 
 _unit setDir ((getDir _chair) - 180); 
 standup = _unit addaction ["<t color='#0099FF'>Встать</t>","Scripts\standup.sqf"];
-_unit setpos [getpos _unit select 0, getpos _unit select 1,((getpos _unit select 2) +1)];
+_unit setpos [getpos _unit select 0, getpos _unit select 1,((getpos _chair select 2) +1)];
 
 

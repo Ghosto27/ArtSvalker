@@ -31,11 +31,7 @@
 					{"av_makarov", 2},
 					{"av_revolver", 4}, 
 					{"av_tt", 6},
-					{"av_aps", 10}, 
-					{"armst_Colt_1911_2", 5},
-					{"av_pp2000", 15},
-					{"av_kedrpp", 18},
-					{"av_aek919", 23},
+					{"av_aps", 10},
 
 					
 										
@@ -43,14 +39,7 @@
 					{"arifle_av_aksu", 45},
 					{"arifle_av_ak74_1", 80},
 					{"arifle_av_aks74", 85},
-					{"arifle_av_ak74s", 86},
-					{"arifle_av_akm", 120}, 
-					{"arifle_av_aek", 75},
-					{"arifle_av_aekg", 85},
-					{"av_AN94", 100},
-					{"arifle_av_akms", 130},
-					{"arifle_av_akms_f", 135}
-				
+					{"arifle_av_ak74s", 86}
 				};
 			};
 			
@@ -304,24 +293,7 @@
 				totalConsume = 1000;
 				displayName = $STR_TRADE_SECTION_REMAINS;
 				items[] = {
-					
-					//Mut parts
-					{"Armst_mut_boar",2},
-					{"Armst_mut_burer2",10},
-					{"Armst_mut_controller",4},
-					{"Armst_mut_krovosos",8},
-					{"Armst_mut_chimera",20},
-					{"Armst_mut_dog",1},
-					{"Armst_mut_olen",1},
-					{"Armst_mut_pauk",2},
-					{"Armst_mut_cat",1},
-					{"Armst_mut_izlom",10},
-					{"Armst_mut_tushkano",0.2},
-					{"Armst_mut_plot",0.3},
-					{"Armst_mut_psevdog",1},
-					{"Armst_mut_poltergeist",10},
-					{"Armst_mut_psevdogigant",70},
-					{"Armst_mut_snork",1}
+					{"Armst_mut_boar",3.25}
 				};
 			};
 			
@@ -329,14 +301,6 @@
 				totalConsume = 1000;
 				displayName = $STR_TRADE_SECTION_ARTEFACTS;
 				items[] = {
-					
-					//Artefacts
-					//anomylki
-					{"Item_TEARS_Unstab",1},
-					{"Item_Medusa_Unstab",1.6},
-					{"Item_GRAVI_Unstab",3},
-					{"Item_STONEBLOOD_Unstab",5}
-					
 					
 				};
 			};

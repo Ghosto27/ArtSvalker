@@ -17,18 +17,9 @@
 		};
 		case 22: {
 		
-			if ("armst_item_detectors_medved" in (assignedItems player)) then 
-				{
-				call ARMST_art_detector_medved_open;
-				};
-			if ("armst_item_detectors_otklick" in (assignedItems player)) then 
-				{
-				call ARMST_art_detector_otklick_open;
-				};
-			if ("armst_item_detectors_svarog" in (assignedItems player)) then 
-				{
-				createdialog "detector_display";
-				};
+			
+			call ARMST_Detectors_ShowDetector; 
+
 			if ("armst_item_pda" in (assignedItems player)) then 
 				{
 					private _dialog = findDisplay 88666;
@@ -48,8 +39,11 @@
 				_dialog closeDisplay 100;
 			};	
 		};
+		//case 38: {
+		//	[player] call armst_headlamp;
+		//};
 		case 41: {
-			[player] execVM "scripts\boost_up.sqf";
+			[player] execVM "\armst\armst_misc\armst_game\scripts\mission\boost_up.sqf";
 		};
 		case 58: {
 			player playActionNow 'GestureRadioTalk';

@@ -12,42 +12,60 @@ Armst_BTR2 =
 {
 if (player isKindOf "Basic_Voen" or player isKindOf "Army_b" or player isKindOf "Army_l" or player isKindOf "elite_voen") then 
 	{
-_veh = createVehicle ["I_mas_cars_uaz_MG", position box_btr_1, [], 0, "FLY"];
+_veh = createVehicle ["ARMST_UAZ469_OPEN", position box_btr_1, [], 0, "FLY"];
 clearMagazineCargoGlobal _veh;
 clearWeaponCargoGlobal _veh;
 clearBackpackCargoGlobal _veh;
 deleteVehicle box_btr_1;
 	};
+};		
+Armst_army_pirson = 
+{
+if (player isKindOf "Basic_Voen" or player isKindOf "Army_b" or player isKindOf "Army_l" or player isKindOf "elite_voen") then 
+	{
+		[army_pirson, "door_sound",5] call CBA_fnc_globalSay3d;
+		[-2, {[army_pirson, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+		sleep 5;
+		[-2, {[army_pirson, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	};
 };	
-Armst_BTR3 = 
-{
-if (player isKindOf "bandits_private" or player isKindOf "bandits_l" or player isKindOf "bandit_elite" or player isKindOf "armst_newbiebandit3" or player isKindOf "armst_newbiebandit2" or player isKindOf "armst_newbiebandit" or player isKindOf "bandits_private2") then 
+Armst_army_sklad = {
+ if (player isKindOf "elite_voen" or player isKindOf "army_l" or player isKindOf "army_b" or player isKindOf "Voen_private" or player isKindOf "Armst_doctor" or player isKindOf "Armst_doctor2" or player isKindOf "Armst_doctor3" or player isKindOf "hazmat_2") then 
 	{
-_veh = createVehicle ["I_mas_cars_uaz_unarmed", position box_btr_3, [], 0, "FLY"];
-clearMagazineCargoGlobal _veh;
-clearWeaponCargoGlobal _veh;
-clearBackpackCargoGlobal _veh;
-deleteVehicle box_btr_3;
+		[sklad, "door_sound",5] call CBA_fnc_globalSay3d;
+		[-2, {[sklad, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+		sleep 5;
+		[-2, {[sklad, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
 	};
 };
-Armst_BTR4 = 
-{
-if (player isKindOf "mercenaries_private" or player isKindOf "elite_merc" or player isKindOf "mercenaries_l" or player isKindOf "mercenaries_private2") then 
+Armst_army_megafone = {
+ if (player isKindOf "elite_voen" or player isKindOf "army_l" or player isKindOf "army_b" or player isKindOf "Voen_private" or player isKindOf "Armst_doctor" or player isKindOf "Armst_doctor2" or player isKindOf "Armst_doctor3" or player isKindOf "hazmat_2") then 
 	{
-_veh = createVehicle ["ARMST_HMMWV", position box_btr_4, [], 0, "FLY"];
-clearMagazineCargoGlobal _veh;
-clearWeaponCargoGlobal _veh;
-clearBackpackCargoGlobal _veh;
-deleteVehicle box_btr_4;
+	[megafone_1, "megafon_alarm_13",300] call CBA_fnc_globalSay3d;
+	sleep 5;
+	[megafone_1, "megafon_alarm_2",300] call CBA_fnc_globalSay3d;
 	};
-};
- Armst_army_megafone = {
-[army_megafone, "megafon_alarm_13",300] call CBA_fnc_globalSay3d;
-sleep 5;
-[army_megafone, "megafon_alarm_2",300] call CBA_fnc_globalSay3d;
 };
  Armst_army_megafone_alarm = {
-[army_megafone, "megafon_alarm",300] call CBA_fnc_globalSay3d;
+ if (player isKindOf "elite_voen" or player isKindOf "army_l" or player isKindOf "army_b" or player isKindOf "Voen_private" or player isKindOf "Armst_doctor" or player isKindOf "Armst_doctor2" or player isKindOf "Armst_doctor3" or player isKindOf "hazmat_2") then 
+	{
+[megafone_1, "megafon_alarm",500] call CBA_fnc_globalSay3d;
+[megafone_2, "megafon_alarm",500] call CBA_fnc_globalSay3d;
+	};
+};
+ Armst_army_megafone_propaganda = {
+ if (player isKindOf "elite_voen" or player isKindOf "army_l" or player isKindOf "army_b" or player isKindOf "Voen_private" or player isKindOf "Armst_doctor" or player isKindOf "Armst_doctor2" or player isKindOf "Armst_doctor3" or player isKindOf "hazmat_2") then 
+	{
+[megafone_2, "propaganda",500] call CBA_fnc_globalSay3d;
+	};
+};
+ Armst_army_megafone_angry = {
+ if (player isKindOf "elite_voen" or player isKindOf "army_l" or player isKindOf "army_b" or player isKindOf "Voen_private" or player isKindOf "Armst_doctor" or player isKindOf "Armst_doctor2" or player isKindOf "Armst_doctor3" or player isKindOf "hazmat_2") then 
+	{
+	_type = ["comandir_megafon_1","comandir_megafon_2","comandir_megafon_3","comandir_megafon_4","comandir_megafon_5"];
+	_resp = _type select floor random count _type;
+	[megafone_2, _resp,200] call CBA_fnc_globalSay3d;
+	};
 };
 
 Armst_science_door = {
@@ -59,19 +77,9 @@ if (player isKindOf "elite_voen" or player isKindOf "army_l" or player isKindOf 
 		[-2, {[science_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
 	};
 };
-Armst_freedom_door = 
-{
-if (player isKindOf "freedom_private" or player isKindOf "freedom_private2" or player isKindOf "freedom_l" or player isKindOf "elite_freedom") then 
-	{
-	[freedom_door, "door_sound",15] call CBA_fnc_globalSay3d;
-	[-2, {[freedom_door, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
-	sleep 5;
-	[-2, {[freedom_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
-	};
-};
 Armst_bandit_door = 
 {
-if (player isKindOf "bandits_private" or player isKindOf "bandits_private2" or player isKindOf "bandits_l" or player isKindOf "bandit_elite" or player isKindOf "armst_newbiebandit3" or player isKindOf "armst_newbiebandit2" or player isKindOf "armst_newbiebandit" or player isKindOf "bandit_new_1" or player isKindOf "bandit_new_1_2" or player isKindOf "bandit_new_1_3" or player isKindOf "bandit_new_2" or player isKindOf "bandit_new_2_3" or player isKindOf "bandit_new_2_2") then 
+if (player isKindOf "ARMST_BANDITS") then 
 	{
 	[bandit_door, "door_sound",15] call CBA_fnc_globalSay3d;
 	[-2, {[bandit_door, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
@@ -79,11 +87,21 @@ if (player isKindOf "bandits_private" or player isKindOf "bandits_private2" or p
 	[-2, {[bandit_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
 	};
 };
+Armst_bandit_door2 = 
+{
 
-
+if (player isKindOf "ARMST_BANDITS") then 
+	{
+	[bandit_door2, "door_sound",15] call CBA_fnc_globalSay3d;
+	[-2, {[bandit_door2, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	sleep 5;
+	[-2, {[bandit_door2, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
+	};
+};
 Armst_dolg_door = 
 {
-if (player isKindOf "Dolg_private" or player isKindOf "elite_dolg" or player isKindOf "dolg_l" or player isKindOf "dolg_b" or player isKindOf "Dolg_private2"or player isKindOf "Dolg_new_soldier") then 
+
+if (player isKindOf "ARMST_BANDITS") then 
 	{
 	[dolg_door, "door_sound",15] call CBA_fnc_globalSay3d;
 	[-2, {[dolg_door, false] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
@@ -91,409 +109,207 @@ if (player isKindOf "Dolg_private" or player isKindOf "elite_dolg" or player isK
 	[-2, {[dolg_door, true] call ARMST_fnc_visibleToggle}] call CBA_fnc_globalExecute;
 	};
 };
-armst_status = {
-hint "Досье смотрите в КПК." 
+
+armst_random_sound = {
+
+_target = _this select 0;
+_type = _this select 1;
+
+_resp = _type select floor random count _type;
+[_target, _resp,3] call CBA_fnc_globalSay3d;
 };
 
-armst_barricade =
-{
-	private["_item","_barricade", "_l", "_pos"];
-	_item = _this select 0;
-	_barricade = _this select 1;
-	
-	if (_item in (items player + assignedItems player)) then 
+ 
+	 FN_radx =
+    {    
+        private["_unit", "_player"];      
+        _unit = _this select 0;      
+		if ("armst_item_antirad" in (items player + assignedItems player)) then 
 		{
-			player playMove "AinvPknlMstpSnonWnonDnon_medic_1";    
-			sleep 5;
-			_pos = getPosASL player;
-			_landFire = player modeltoworld [0,1.8,0];
-			_landFire set [2,0];
-			_l = createVehicle [_barricade, _pos, [], 0, "NONE"];
-			_l setPos _landFire;
-			_l setDir getDir player + 180 ;
-			player removeitem _item;
-		}
-	else
-		{
-			["Нечего устанавливать."] call AGM_Core_fnc_displayTextStructured;  
-		};
-};
-
-ARMST_art_detector_on = 
-{
-
-_state = player getVariable "ARMST_artdetector";
-if (( _state == 1 ) && ("ARMST_batteries" in (items player + assignedItems player))) then 
-	{
-	player setVariable ["ARMST_artdetector",0];
-	player removeitem "ARMST_batteries";
-	_analistext = "";
-	_resulttext = "";
-	_sbortext = "";
-	_achtungtext = "";
-	ctrlSetText [8670, _achtungtext];
-	ctrlSetText [8669, _resulttext];
-	ctrlSetText [8668, _sbortext];
-	ctrlSetText [8667, _analistext];
-
-	_list = player nearEntities [["DAP_ARTEFACT_hard", "DAP_ARTEFACT"], 100];
-	_cnt = count _list;
-
-		_analistext = "Анализ местности .";
-		ctrlSetText [8667, _analistext];
-		sleep 1;
-		playsound "geiger2_1";
-		_analistext = "Анализ местности . .";
-		ctrlSetText [8667, _analistext];
-		sleep 1;
-		playsound "geiger2_1";
-		_analistext = "Анализ местности . . .";
-		ctrlSetText [8667, _analistext];
-		sleep 1;
-		playsound "geiger2_1";
-		_analistext = "Анализ местности .";
-		ctrlSetText [8667, _analistext];
-		sleep 1;
-		playsound "geiger2_1";
-		_analistext = "Анализ местности . .";
-		ctrlSetText [8667, _analistext];
-		sleep 1;
-		playsound "geiger2_1";
-		_analistext = "Анализ местности . . .";
-		ctrlSetText [8667, _analistext];
-		sleep 1;
-		playsound "geiger2_1";
-		_sbortext = "Сбор данных .";
-		ctrlSetText [8668, _sbortext];
-		sleep 1;
-		playsound "geiger2_1";
-		_sbortext = "Сбор данных . .";
-		ctrlSetText [8668, _sbortext];
-		sleep 1;
-		playsound "geiger2_1";
-		_sbortext = "Сбор данных . . .";
-		ctrlSetText [8668, _sbortext];
-		sleep 1;
-		playsound "geiger2_1";
-		_sbortext = "Сбор данных .";
-		ctrlSetText [8668, _sbortext];
-		sleep 1;
-		playsound "geiger2_1";
-		_sbortext = "Сбор данных . .";
-		ctrlSetText [8668, _sbortext];
-		sleep 1;
-		playsound "geiger2_1";
-		_sbortext = "Сбор данных . . .";
-		ctrlSetText [8668, _sbortext];
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		playsound "geiger2_1";
-		sleep 0.5;
-		if (_cnt > 0) then {
-		_achtungtext = "Внимание ! ! !";
-		ctrlSetText [8670, _achtungtext];
-		ctrlSetText [8669, format["В радиусе 100 метров обнаружено «%1» артефактов .",_cnt]];
-		player setVariable ["ARMST_artdetector",1];
-		playsound "geiger2_1";
+       "" remoteExec ["armst_radx", _unit];
 		}
 		else
 		{
-		_resulttext = "Ошибка. Артефакты не обнаружены.";
-		playsound "geiger2_1";
-		player setVariable ["ARMST_artdetector",1];
-		ctrlSetText [8669, _resulttext];
+		Hint "Отсутствует Антирад!";
 		};
-	};
-};
-armst_spawn_artefact = 
-{
-_epicenter = _this select 0;
-_range = _this select 1;
-_artefacts = _this select 2;
-_chance = _this select 3;
-_pos = _epicenter modelToWorld [((random _range)-(random _range)),((random _range)-(random _range)),(random 3)];
-		
-	if ("armst_item_detectors_otklick" in (assignedItems player)) then
-	{
-		if  (_chance >= (random 100)) then 
-		{
-				ARMST_TEXTXX2 = format ["<img image='\armst\armst_item\detectors\item_detector_1_ico.paa' size='2' shadow='true'/>"];
-				ARMST_TEXTXX1 = "Рядом обнаружен артефакт.";
-				[composeText [parseText ARMST_TEXTXX2, lineBreak, parseText ARMST_TEXTXX1]] call AGM_Core_fnc_displayTextStructured;
-				_artefact = _artefacts createVehicle _pos;
-				_artefact setVelocity [((random _range)-(random _range)),((random _range)-(random _range)),(random 7)];
-				sleep 120;
-				deletevehicle _artefact;
-		};	
-	};
-	if ("armst_item_detectors_medved" in (assignedItems player)) then
-	{
-		if  (_chance >= (random 80)) then 
-		{
-				ARMST_TEXTXX2 = format ["<img image='\armst\armst_item\detectors\item_detector_2_ico.paa' size='2' shadow='true'/>"];
-				ARMST_TEXTXX1 = "Рядом обнаружен артефакт.";
-				[composeText [parseText ARMST_TEXTXX2, lineBreak, parseText ARMST_TEXTXX1]] call AGM_Core_fnc_displayTextStructured;
-				_artefact = _artefacts createVehicle _pos;
-				_artefact setVelocity [((random _range)-(random _range)),((random _range)-(random _range)),(random 7)];
-				sleep 120;
-				deletevehicle _artefact;
-		};	
-	};
-	if ("armst_item_detectors_svarog" in (assignedItems player)) then
-	{
-		if  (_chance >= (random 60)) then 
-		{
-				ARMST_TEXTXX2 = format ["<img image='\armst\armst_item\detectors\item_detector_3_ico.paa' size='2' shadow='true'/>"];
-				ARMST_TEXTXX1 = "Рядом обнаружен артефакт.";
-				[composeText [parseText ARMST_TEXTXX2, lineBreak, parseText ARMST_TEXTXX1]] call AGM_Core_fnc_displayTextStructured;
-				_artefact = _artefacts createVehicle _pos;
-				_artefact setVelocity [((random _range)-(random _range)),((random _range)-(random _range)),(random 7)];
-				sleep 120;
-				deletevehicle _artefact;
-		};	
-	};
-};
-armst_respawn_wake =
-	{
-	_condition = typeOf player;
-	switch (_condition) do {
+    }; 
 
-		case "loner_private1": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-		};
-		case "loner_private2": { 
+	
+	FN_prinud_water  =
+    {    
+        private["_unit", "_player"];      
+        _unit = _this select 0;      
+		_hunger=_unit getVariable ["ARMST_THIRST",1];
+		if (_hunger>1) exitwith {
+		  
+				["В меня больше не лезет!!!"] call AGM_Core_fnc_displayTextStructured; 
+		};	    
+		_unit setVariable ["ARMST_THIRST", (_unit getVariable "ARMST_THIRST") + 0.5];
+		["Вас напоили водой..."] call AGM_Core_fnc_displayTextStructured; 
+	};	 
+	FN_prinud_vodka  =
+    {    
+        private["_unit", "_player"];      
+        _unit = _this select 0;     
+		_hunger=_unit getVariable ["ARMST_THIRST",1];
+		if (_hunger>1) exitwith {
+		  
+				["В меня больше не лезет!!!"] call AGM_Core_fnc_displayTextStructured; 
+		};	     
+		_unit setVariable ["ARMST_THIRST", (_unit getVariable "ARMST_THIRST") + 0.2];
+		["Вас напоили водкой..."] call AGM_Core_fnc_displayTextStructured; 
+		[0] call ARMST_Radiation_SetInfection;
+	};	
+	FN_prinud_bred  =
+    {    
+        private["_unit", "_player"];      
+        _unit = _this select 0;         
+		_hunger=_unit getVariable ["ARMST_HUNGER",1];
+		if (_hunger>1) exitwith {
+		  
+				["В меня больше не лезет!!!"] call AGM_Core_fnc_displayTextStructured; 
+		};	 
+		_unit setVariable ["ARMST_HUNGER", (_unit getVariable "ARMST_HUNGER") + 0.25];
+		["Вас накормили хлебом..."] call AGM_Core_fnc_displayTextStructured; 
+	};	 
+	FN_prinud_kolbasa  =
+    {    
+        private["_unit", "_player"];      
+        _unit = _this select 0;     
+		_hunger=_unit getVariable ["ARMST_HUNGER",1];
+		if (_hunger>1) exitwith {
+		  
+				["В меня больше не лезет!!!"] call AGM_Core_fnc_displayTextStructured; 
+		};		
+		_unit setVariable ["ARMST_HUNGER", (_unit getVariable "ARMST_HUNGER") + 0.3];
+		["Вас накормили колбасой..."] call AGM_Core_fnc_displayTextStructured; 
+	};	   
+	
+	
+	
+ARMST_TeleportPoints = 
+	{
+
+	//Autors: Aloe, Romzet
+	//Description:
+	//Tелепортирует игрока с триггера Trigger на другой в соответсвии с параметрами Index и Altitude
+		
+	//Parameter(s):
+	//0: Trigger <Object> Текущий триггер
+	//1: Index <Number, Array> Если параметр является числом, телепортация осуществляется на триггер с этим индексом. 
+	//Если является массивом с одним элементом [0], параметр принимает контекст шага и телепортация будет осуществлена на
+	//рандомный, соседний (по индексу) триггер (исключая текущий) в соответсвии с шагом. 
+	//Note: Если шаг = 0, телепортация будет осуществлена на этот же триггер   
+	//2: Altitude <Number> (Optional) Высота, по умолчанию: 0
+	
+	
+	if(params [["_activator", objNull, [objNull]], ["_point", [0], [0, [0]]]]) then {
+	
+		//local only
+		if (local player) then {
+			private ["_altitude", "_formatTrgName", "_getTriggerIndex", "_getRandomPoint", "_triggerNext"];
 			
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-		};
-		case "loner_private3": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
+			_altitude = if(count _this > 2)then{_this select 2}else{0};
+			_formatTrgName = "anomalyTeleport_";
 			
-		};
-		case "loner_private4": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
+			//Get Index from trigger name function
+			_getTriggerIndex = {
+				private ["_name", "_nameSeparate", "_index"];
+				_index = -1;
+				{
+					if (missionNamespace getVariable _x isEqualTo _this) exitWith {_name = _x};
+				} forEach allVariables missionNamespace;
+				
+				if !(isNil "_name") then {
+					_nameSeparate = _name splitString "_";
+					if !(_nameSeparate isEqualTo []) then {
+						_index = parseNumber (_nameSeparate select 1);
+					};
+				};
+			_index;
+			};
 			
-		};
-		case "loner_private5": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-		[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
+			//Get a random trigger on the index between spending function
+			_getRandomPoint = {
+				params ["_current", "_diverge"];
+				private ["_point", "_period", "_attempt"];
+				
+				_point = objNull;
+				_period = [];
+				for "_i" from (_current - _diverge) to (_current + _diverge) step 1 do {
+					if(_i > 0 and _i != _current) then {_period pushBack _i}else{_diverge = _diverge + 1};
+				};
+				
+				if(count _period > 0) then {
+					_attempt = 0;
+					while {_attempt <= count _period} do {
+						private ["_randTrg"];
+						_randTrg = missionNamespace getVariable [format["%1%2", _formatTrgName, _period select floor random count _period], nil];
+						if !(isNil "_randTrg") exitWith {
+							_point = _randTrg;
+						};
+						
+					_attempt = _attempt + 1;
+					};
+				};
+
+			_point;
+			};
 			
-		};
-		case "armst_coat_1": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
+			switch (typeName _point) do {
+				case "SCALAR" : {
+					_triggerNext = missionNamespace getVariable (format ["%1%2", _formatTrgName, _point]);
+				};
+				case "ARRAY" : {
+					private ["_currentIndex"];
+					_currentIndex = _activator call _getTriggerIndex;
+					_point = _point select 0;
+					
+					if(_point > 0) then {
+						_triggerNext = [_currentIndex, _point] call _getRandomPoint;
+					}else{
+						_triggerNext = call compile (format ["%1%2", _formatTrgName, _currentIndex]);
+					};
+				};
+				default {};
+			};
+				
+			//hint format ["Текущий индекс: %1 Следующий: %2", str (_activator call _getTriggerIndex), str (_triggerNext call _getTriggerIndex)];
 			
-		};
-		case "armst_coat_2": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
+			if !(isNil "_triggerNext") then {
 			
-		};
-		case "armst_coat_3": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_coat_4": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_coat_5": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_coat_6": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_coat_7": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_coat_8": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice_1": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice_2": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice_3": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice_4": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice_5": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice_6": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice_7": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "armst_novice_8": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "loner_l": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
+				if (alive player) then {
+					
+					sleep 6;
+					
+					if(player in list _activator) then { //Снова проверяем после задержки
+						player say2d "voronka";
+						enableCamShake true;
+						addCamShake [2, 10, 25];
+						sleep 6;
+						if(player in list _activator) then { //И ещё раз и всегда после задержек
+							RANDOMDEATH = random 10;
+							player playactionnow "Gestureheadkick";
+							addCamShake [3, 5, 20];
+							player setFatigue 1;
+							//player playactionnow "Gestureheadkick";
+							private ["_teleportPos"];
+							_teleportPos = getPosATL _triggerNext;
+							_teleportPos set [2, _altitude];
+							player setPosATL _teleportPos;
+							if (RANDOMDEATH >= 8) then {player setdamage 1;};
+						};
+					};
+				};
+			} else {
+				private ["_error"];
+				_error =  format ["Undefined trigger '%1'", format ["%1%2", _formatTrgName, _point]];
+				diag_log _error;
+				hint _error;
+			};
 			
 		};
-		case "loner_b": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "elite_loner1": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "elite_loner2": { 
-		player setPosATL [762.079,610.247, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
-		case "clearsky_private": { 
-		player setPosATL [5520.276,461.430, 0.2];
-		sleep 1;
-			[[player, "armst_wakeup"], "switchMove"] call bis_fnc_mp;
-		sleep 5;
-   	 	[[player, ""], "switchMove"] call bis_fnc_mp;
-			
-		};
+	}else{
+		diag_log format ["Incorrect params: %1 in %2", _this, __FILE__];
 	};
 };
-    an_fnc_11 =
-    {
-        private["_unit"];
-        _unit = _this select 0;
-        [[_unit, "armst_rest_fire"], "switchMove"] call bis_fnc_mp;
-    };
